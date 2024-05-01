@@ -10,11 +10,23 @@ Make the text of the Tripitaka searchable for phrases and statistics. And compar
 - 35,049 sentences
 - 790,573 words
 - 3,223,201 characters
-- 1062 pages if printed 80x50 per page (Consolas 11pt on A4 with 17/19mm border)
+- 1062 pages if printed 80x50 per page (Consolas 11pt on A4 with 17/19mm border - 4.3 MByte as text file)
 
 ### Tripitaka
 
-- Vinaya Piṭaka, Sutra Piṭaka and Abhidhamma Piṭaka (incomplete JSON 108 MByte in 2218 files from [whizsid/tripitaka-api](https://github.com/whizsid/tripitaka-api))
+The three Baskets in the [Pali edition](https://github.com/suttacentral/bilara-data):
+
+- Vinaya Piṭaka has 440 JSON items that combined need 6.7 MByte
+- Sutta Piṭaka has 5881 JSON items that combined need 22.8 MByte
+- Abhidhamma Piṭaka has 1173 JSON items, combined 11.2 MByte
+
+Combined thats 40.7 MByte and roughly 10x larger than the KJV project. There is some JSON overhead and filesize to consider, but probably soon these files can be automatially parsed and at least for Pali a size estimation be generated.
+
+Another size comparison source: [The Vipassana Research Institute (VRI)](https://www.vridhamma.org/Tipitaka-Project) in India states that the Tripitaka makes up 24 million characters. My count on KJV revealed 3.2 million. So the order of magnitude seems correct.
+
+A python script run will hopefully give some insight similar to the KJV above from 2024/05/01
+
+- Vinaya Piṭaka, Sutta Piṭaka and Abhidhamma Piṭaka (incomplete JSON 108 MByte in 2218 files from [whizsid/tripitaka-api](https://github.com/whizsid/tripitaka-api))
 - 15 (5 + 3 + 7) nikayas (collections) of suttas
 - ? verses/suttras
 - ? paragraphs
