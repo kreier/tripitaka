@@ -4,7 +4,7 @@ Make the text of the Tripitaka searchable for phrases and statistics. And compar
 
 ### Bible
 
-- 66 books
+- 66 books (5.2 MByte in 66 JSON files, from [Arul John](https://github.com/aruljohn/Bible-kjv))
 - 1189 chapters
 - ? verses
 - ? sentences
@@ -14,7 +14,7 @@ Make the text of the Tripitaka searchable for phrases and statistics. And compar
 
 ### Tripitaka
 
-- Vinaya Piṭaka, Sutra Piṭaka and Abhidhamma Piṭaka
+- Vinaya Piṭaka, Sutra Piṭaka and Abhidhamma Piṭaka (incomplete JSON 108 MByte in 2218 files from [whizsid/tripitaka-api](https://github.com/whizsid/tripitaka-api))
 - 15 (5 + 3 + 7) nikayas (collections) of suttas
 - ? verses/suttras
 - ? paragraphs
