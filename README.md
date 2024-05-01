@@ -6,7 +6,7 @@ Make the text of the Tripitaka searchable for phrases and statistics. And compar
 
 - 66 books (5.2 MByte in 66 JSON files, from [Arul John](https://github.com/aruljohn/Bible-kjv))
 - 1189 chapters
-- ? verses
+- 31102 verses
 - ? sentences
 - ? words
 - ? characters
