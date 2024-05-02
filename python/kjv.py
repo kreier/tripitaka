@@ -123,7 +123,7 @@ if __name__ == "__main__":
     #     print("You did not provide a path to a folder with a Books.json in it as argument. Put it as a parameter after examine.py")
     #     exit()
     # sourcefolder = sys.argv[1]
-    sourcefolder = ""../bible/kjv"
+    sourcefolder = "../bible/kjv"
     import_booklist(sourcefolder)
     if len(booklist) > 0:
         parse_list()
