@@ -24,7 +24,15 @@ Combined thats 40.7 MByte and roughly 10x larger than the KJV project. There is 
 
 Another size comparison source: [The Vipassana Research Institute (VRI)](https://www.vridhamma.org/Tipitaka-Project) in India states that the Tripitaka makes up 24 million characters. My count on KJV revealed 3.2 million. So the order of magnitude seems correct.
 
-A python script run will hopefully give some insight similar to the KJV above from 2024/05/01
+![Size based on pages in the Kuthodaw Pagoda](docs/size_kuthodaw.png)
+
+The above graph was created based on the used tablets used for the baskets in the [largest book of the world with 729 tablets](https://en.wikipedia.org/wiki/Tripi%E1%B9%ADaka_tablets_at_Kuthodaw_Pagoda) in Mandalay. It assumes that the content of each of the tablets is roughly the same.
+
+- Vinaya Piṭaka 111 tablets
+- Sutta Pitaka - 410 tablets (for DN, MN, SN (65), AN(78), KN(169))
+- Abhidhamma Piṭaka - 208 tablets
+
+A python script run will hopefully give some further insight into the size of the Tipitaka similar to the KJV above from 2024/05/01.
 
 - Vinaya Piṭaka, Sutta Piṭaka and Abhidhamma Piṭaka (incomplete JSON 108 MByte in 2218 files from [whizsid/tripitaka-api](https://github.com/whizsid/tripitaka-api))
 - 15 (5 + 3 + 7) nikayas (collections) of suttas
