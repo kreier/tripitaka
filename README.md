@@ -123,6 +123,6 @@ Similar projects have been done with the bible and having all 1189 chapters in J
 ## Tripitaka sources
 
 - [tripitaka.online](https://tripitaka.online/) only in Sinhala
-- [suttacentral](https://suttacentral.net/?lang=en) 
+- [suttacentral](https://suttacentral.net/?lang=en) by [Bhante Sujato](https://en.wikipedia.org/wiki/Bhante_Sujato) in English, [Pali from VRI](https://discourse.suttacentral.net/t/what-is-the-difference-between-the-pali-text-of-the-vri-and-that-of-the-mahasa-giti/2667)
 - [theravada.vn](https://theravada.vn/tipitaka-english/) Vietnamese site with 541 English, 2722 Roman and 2034 Vietnamese suttras
 
