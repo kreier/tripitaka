@@ -7,25 +7,6 @@ if os.getcwd()[-6:] != "python":
     print("This script must be executed inside the /python folder.")
     exit()
 
-def import_booklist(sourcefolder):
-    global booklist
-    if sourcefolder[-1] != "/":
-        sourcefolder += "/"
-    booklistfile = sourcefolder + "Books.json"
-    print(f"Import the books listed in {booklistfile}: ", end="")
-    if not os.path.isfile(booklistfile):
-        print("This file does not exist.")
-        return
-    f = open(booklistfile)
-    list_books = json.load(f)
-    nr_books = 0
-    for book in list_books:
-        # print(sourcefolder + book)
-        nr_books += 1
-        booklist.append(sourcefolder + book + ".json")
-    print(f"Found {nr_books} books")
-    # booklist = ["../bible/kjv/Genesis.json"]
-
 def investigate(source, folder):
     number_files = 0
     number_folders = 0
@@ -52,10 +33,12 @@ def investigate(source, folder):
         writer = csv.writer(csvfile)
         writer.writerow(header_list)
         writer.writerows(list_output)
-    print(f"Wrote {source}{folder}.json")
+    print(f"Wrote {source}{folder}.csv")
     return number_files, number_folders
 
-
+def convert_csv_to_json(pitakas):
+    for pitaka in pitakas:
+        print(pitaka)
 
 if __name__ == "__main__":
     f = [ "vinaya", "sutta", "abhidhamma"]
@@ -64,9 +47,4 @@ if __name__ == "__main__":
     for folder in f:
         number_files, number_folders = investigate(sourcefolder, folder)
         print(f"Folder {folder} contains {number_files} files in {number_folders} folders.")
-
-
-
-
-                # print(os.path.join(root, filename))       
-            # print(root, " - ", dirs, " - ", filename)
+    convert_csv_to_json(f)

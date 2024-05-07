@@ -7,30 +7,30 @@ if os.getcwd()[-6:] != "python":
     print("This script must be executed inside the /python folder.")
     exit()
 
-booklist = []
+jsonlist = []
 output = ""
 number_pages = 1
 current_line = 0
 current_column = 0
+list_books = []
 
-def import_booklist(sourcefolder):
-    global booklist
+def import_jsonfiles_list(sourcefolder):
+    global jsonlist
     if sourcefolder[-1] != "/":
         sourcefolder += "/"
-    booklistfile = sourcefolder + "Books.json"
-    print(f"Import the books listed in {booklistfile}: ", end="")
-    if not os.path.isfile(booklistfile):
+    jsonlistfile = sourcefolder + "Books.json"
+    print(f"Import the data listed in {jsonlistfile}: ", end="")
+    if not os.path.isfile(jsonlistfile):
         print("This file does not exist.")
         return
-    f = open(booklistfile)
-    list_books = json.load(f)
-    nr_books = 0
-    for book in list_books:
+    f = open(jsonlistfile)
+    list_jsonfiles = json.load(f)
+    nr_jsonfiles = 0
+    for jsonfile in list_jsonfiles:
         # print(sourcefolder + book)
-        nr_books += 1
-        booklist.append(sourcefolder + book + ".json")
-    print(f"Found {nr_books} books")
-    # booklist = ["../bible/kjv/Genesis.json"]
+        nr_jsonfiles += 1
+        jsonlist.append(sourcefolder + jsonfile + ".json")
+    print(f"Found {nr_jsonfiles} json files")
 
 def extend_print(bookname, nr_chapter, nr_verse, text_verse):
     global output, current_line, current_column
@@ -73,8 +73,25 @@ def add_pagebreak():
     if number_pages % 100 == 0:
         print(f"Number pages: {number_pages}")
 
+def decrypt(key):
+    # determine internal name for book, chapter and verse - but sometimes chapter is missing!
+    colon = key.find(":")
+    substring = key[colon+1:]
+    dot = substring.find(".")
+    internal_verse = substring[:dot]
+    substring = key[:colon]
+    dot = substring.find(".")
+    if dot == -1:   # there is no dot - no chapter!
+        internal_bookname = substring
+        internal_chapter = "1"
+    else:
+        internal_bookname = substring[:dot]
+        internal_chapter = substring[dot+1:]
+    return internal_bookname, internal_chapter, internal_verse
+
+
 def parse_list():
-    global booklist, number_pages, output, current_column
+    global jsonlist, number_pages, output, current_column, list_books
     number_books      = 0
     number_chapters   = 0
     number_verses     = 0
@@ -84,17 +101,34 @@ def parse_list():
     # output += "\n"*25
     # output += "                      Project 'examine large textbodies'\n"
     # add_pagebreak()
-    for bookname in booklist:
-        output += bookname + "\n\n"
-        number_books += 1
-        nr_chapter = 2
-        f = open(bookname)
-        book = json.load(f)
-        for key in book:
-            verse = book[key]
-            number_verses += 1
-            extend_print(bookname, nr_chapter, 2, verse)
-            sentences = nltk.sent_tokenize(verse)
+    current_book    = ""
+    current_chapter = ""
+    current_verse   = "0"
+    verseline       = ""
+    for jsonname in jsonlist: # here referring to each json file of the 7288
+        f = open(jsonname)
+        jsonfile = json.load(f)
+        for key in jsonfile: # the key is the indication of book, chapter, verse
+            textline = jsonfile[key]
+            key_book, key_chapter, key_verse = decrypt(key)
+            if current_book != key_book:
+                current_book = key_book
+                if not current_book in list_books:
+                    number_books += 1
+                    list_books.append(current_book)
+                    output += current_book + "\n\n"
+            if current_chapter != key_chapter:
+                number_chapters += 1
+                current_chapter = key_chapter
+            if current_verse != key_verse:
+                number_verses += 1
+                extend_print(current_book, current_chapter, current_verse, verseline)
+                verseline = ""
+                current_verse = key_verse
+            verseline += textline
+            # print(f"{key}  - book: {internal_bookname} {internal_chapter}:{internal_verse}")
+            extend_print(current_book, current_chapter, current_verse, textline)
+            sentences = nltk.sent_tokenize(textline)
             for sentence in sentences:
                 number_sentences += 1
                 sentence = sentence.replace('’','')
@@ -107,13 +141,13 @@ def parse_list():
         f.close()
         output += "\n\n\n"
         current_column = 0
-    print(f"Parsed: {number_books} Books.")
-    print(f"Parsed: {number_chapters} Chapters.")
-    print(f"Parsed: {number_verses} Verses.")
-    print(f"Parded: {number_sentences} Sentences.")
-    print(f"Parsed: {number_words} Words.")
-    print(f"Parsed: {number_letters} Letters.")
-    print(f"Parsed: {number_pages} Pages 80x50.")
+    print(f"Parsed: {number_books} books.")
+    print(f"Parsed: {number_chapters} chapters.")
+    print(f"Parsed: {number_verses} verses.")
+    print(f"Parded: {number_sentences} sentences.")
+    print(f"Parsed: {number_words} words.")
+    print(f"Parsed: {number_letters} letters or characters.")
+    print(f"Parsed: {number_pages} pages 80x50.")
 
 if __name__ == "__main__":
     # if len(sys.argv) < 2:
@@ -121,8 +155,9 @@ if __name__ == "__main__":
     #     exit()
     # sourcefolder = sys.argv[1]
     sourcefolder = "../tripitaka/pli/ms"
-    import_booklist(sourcefolder)
-    if len(booklist) > 0:
+    import_jsonfiles_list(sourcefolder)
+    if len(jsonlist) > 0:
         parse_list()
     with open("tripitaka.txt", "w") as text_file:
         text_file.write(output)
+    print(list_books)
