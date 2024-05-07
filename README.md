@@ -18,9 +18,9 @@ Make the text of the Tripitaka searchable for phrases and statistics. And compar
 
 The three Baskets in the [Pali edition](https://github.com/suttacentral/bilara-data):
 
-- Vinaya Piṭaka has 454 JSON items in 18 folders that combined need 6.7 MByte
-- Sutta Piṭaka has 5741 JSON items in 110 folders that combined need 22.8 MByte
-- Abhidhamma Piṭaka has 1110 JSON items in 64 folders, combined 11.2 MByte
+- Vinaya Piṭaka has 422 JSON items in 18 folders that combined need 6.7 MByte
+- Sutta Piṭaka has 5764 JSON items in 110 folders that combined need 22.8 MByte
+- Abhidhamma Piṭaka has 1102 JSON items in 64 folders, combined 11.2 MByte
 
 Combined thats 40.7 MByte and roughly 10x larger than the KJV project. There is some JSON overhead and filesize to consider, but probably soon these files can be automatially parsed and at least for Pali a size estimation be generated. 7288 json files in 192 folders.
 
