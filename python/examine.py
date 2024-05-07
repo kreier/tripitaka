@@ -1,8 +1,8 @@
-# Examine a given text in JSON format for a defined search criteria
+# Examine a given text in JSON format
 
 import os, sys, json, nltk
 
-# Check execution location, exit if not in /timeline/python
+# Check execution location, exit if not in /python
 if os.getcwd()[-6:] != "python":
     print("This script must be executed inside the /python folder.")
     exit()

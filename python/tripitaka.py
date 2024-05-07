@@ -1,4 +1,4 @@
-# Examine the kjv text in JSON format for a defined search criteria
+# Examine the pali tripitaka text in JSON format
 
 import os, sys, json, nltk
 
@@ -56,7 +56,7 @@ def extend_print(bookname, nr_chapter, nr_verse, text_verse):
             current_column = 0
         if current_line > 49:
             add_pagebreak()
-            output += bookname + " " + nr_chapter + "\n\n"
+            output += bookname + " " + str(nr_chapter) + "\n\n"
 
 def add_pagebreak():
     global number_pages, output, current_line
@@ -84,29 +84,26 @@ def parse_list():
     # output += "\n"*25
     # output += "                      Project 'examine large textbodies'\n"
     # add_pagebreak()
-    for book in booklist:
-        f = open(book)
-        book = json.load(f)
-        book_name = book['book']
-        output += book_name + "\n\n"
+    for bookname in booklist:
+        output += bookname + "\n\n"
         number_books += 1
-        for chapter in book['chapters']:
-            number_chapters += 1
-            nr_chapter = chapter['chapter']
-            for verse in chapter['verses']:
-                number_verses += 1
-                nr_verse = verse['verse']
-                extend_print(book_name, nr_chapter, nr_verse, verse['text'])
-                sentences = nltk.sent_tokenize(verse['text'])
-                for sentence in sentences:
-                    number_sentences += 1
-                    sentence = sentence.replace('’','')
-                    wordlist = nltk.word_tokenize(sentence)
-                    for word in wordlist:
-                        if word != "." and word != "," and word != ":" and word != ";" and word != "’" and word != "?":
-                            number_words += 1
-                            number_letters += len(word)
-                            # print(word, end="_")
+        nr_chapter = 2
+        f = open(bookname)
+        book = json.load(f)
+        for key in book:
+            verse = book[key]
+            number_verses += 1
+            extend_print(bookname, nr_chapter, 2, verse)
+            sentences = nltk.sent_tokenize(verse)
+            for sentence in sentences:
+                number_sentences += 1
+                sentence = sentence.replace('’','')
+                wordlist = nltk.word_tokenize(sentence)
+                for word in wordlist:
+                    if word != "." and word != "," and word != ":" and word != ";" and word != "’" and word != "?":
+                        number_words += 1
+                        number_letters += len(word)
+                        # print(word, end="_")
         f.close()
         output += "\n\n\n"
         current_column = 0
@@ -123,9 +120,9 @@ if __name__ == "__main__":
     #     print("You did not provide a path to a folder with a Books.json in it as argument. Put it as a parameter after examine.py")
     #     exit()
     # sourcefolder = sys.argv[1]
-    sourcefolder = "../bible/kjv"
+    sourcefolder = "../tripitaka/pli/ms"
     import_booklist(sourcefolder)
     if len(booklist) > 0:
         parse_list()
-    with open("kjv.txt", "w") as text_file:
+    with open("tripitaka.txt", "w") as text_file:
         text_file.write(output)

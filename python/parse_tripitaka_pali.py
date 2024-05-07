@@ -1,4 +1,4 @@
-# Examine the kjv text in JSON format for a defined search criteria
+# Parse the /tripitaka/pli/ms/ folders for JSON files, create a Books.json
 
 import os, sys, json, nltk
 
@@ -119,13 +119,16 @@ def parse_list():
     print(f"Parsed: {number_pages} Pages 80x50.")
 
 if __name__ == "__main__":
+    print('Parse the 3 folders abhidhamma, sutta and vinaya in tripitaka/pli/ms')
+    print("Create a Books.json files in this root folder.")
     # if len(sys.argv) < 2:
     #     print("You did not provide a path to a folder with a Books.json in it as argument. Put it as a parameter after examine.py")
     #     exit()
     # sourcefolder = sys.argv[1]
-    sourcefolder = "../bible/kjv"
-    import_booklist(sourcefolder)
-    if len(booklist) > 0:
-        parse_list()
-    with open("kjv.txt", "w") as text_file:
-        text_file.write(output)
+    sourcefolder = "../tripitaka/pli/ms"
+    print("start parsing ...")
+    # import_booklist(sourcefolder)
+    # if len(booklist) > 0:
+    #     parse_list()
+    # with open("kjv.txt", "w") as text_file:
+    #     text_file.write(output)
