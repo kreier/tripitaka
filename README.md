@@ -14,6 +14,8 @@ Make the text of the Tripitaka searchable for phrases and statistics. And compar
 
 ### Tripitaka
 
+<img src="docs/size_kuthodaw_small.png" width="30%" align="right">
+
 The three Baskets in the [Pali edition](https://github.com/suttacentral/bilara-data):
 
 - Vinaya Piṭaka has 440 JSON items that combined need 6.7 MByte
