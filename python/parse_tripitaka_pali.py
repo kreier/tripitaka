@@ -32,103 +32,66 @@ def import_booklist(sourcefolder):
     print(f"Found {nr_books} books")
     # booklist = ["../bible/kjv/Genesis.json"]
 
-def extend_print(bookname, nr_chapter, nr_verse, text_verse):
-    global output, current_line, current_column
-    if nr_verse == '1':
-        remaining_txt = f"|{nr_chapter}| " + text_verse + " "
-    else:
-        remaining_txt = f"{nr_verse} " + text_verse + " "
-    while len(remaining_txt) > 0:
-        if current_column + len(remaining_txt) < 79:
-            output += remaining_txt
-            current_column += len(remaining_txt)
-            remaining_txt = ""
-        else:
-            max_length = 79 - current_column
-            max_string = remaining_txt[:max_length]
-            # find rightmost space in this string
-            last_space = max_string.rfind(' ')
-            if last_space > 0:
-                output += remaining_txt[:last_space]
-                remaining_txt = remaining_txt[last_space+1:]
-            output += "\n"
-            current_line += 1
-            current_column = 0
-        if current_line > 49:
-            add_pagebreak()
-            output += bookname + " " + nr_chapter + "\n\n"
 
-def add_pagebreak():
-    global number_pages, output, current_line
-    if current_line < 49:
-        for i in range(49 - current_line):
-            output += "\n"
-    output += "\n"
-    output += f"                                       {number_pages}\n"
-    output += "\n"
-    output += "---\n"
-    output += "\n"
-    current_line = -2
-    number_pages += 1
-    if number_pages % 100 == 0:
-        print(f"Number pages: {number_pages}")
 
-def parse_list():
-    global booklist, number_pages, output, current_column
-    number_books      = 0
-    number_chapters   = 0
-    number_verses     = 0
-    number_sentences  = 0
-    number_words      = 0
-    number_letters    = 0
-    # output += "\n"*25
-    # output += "                      Project 'examine large textbodies'\n"
-    # add_pagebreak()
-    for book in booklist:
-        f = open(book)
-        book = json.load(f)
-        book_name = book['book']
-        output += book_name + "\n\n"
-        number_books += 1
-        for chapter in book['chapters']:
-            number_chapters += 1
-            nr_chapter = chapter['chapter']
-            for verse in chapter['verses']:
-                number_verses += 1
-                nr_verse = verse['verse']
-                extend_print(book_name, nr_chapter, nr_verse, verse['text'])
-                sentences = nltk.sent_tokenize(verse['text'])
-                for sentence in sentences:
-                    number_sentences += 1
-                    sentence = sentence.replace('’','')
-                    wordlist = nltk.word_tokenize(sentence)
-                    for word in wordlist:
-                        if word != "." and word != "," and word != ":" and word != ";" and word != "’" and word != "?":
-                            number_words += 1
-                            number_letters += len(word)
-                            # print(word, end="_")
-        f.close()
-        output += "\n\n\n"
-        current_column = 0
-    print(f"Parsed: {number_books} Books.")
-    print(f"Parsed: {number_chapters} Chapters.")
-    print(f"Parsed: {number_verses} Verses.")
-    print(f"Parded: {number_sentences} Sentences.")
-    print(f"Parsed: {number_words} Words.")
-    print(f"Parsed: {number_letters} Letters.")
-    print(f"Parsed: {number_pages} Pages 80x50.")
+
 
 if __name__ == "__main__":
     print('Parse the 3 folders abhidhamma, sutta and vinaya in tripitaka/pli/ms')
     print("Create a Books.json files in this root folder.")
-    # if len(sys.argv) < 2:
-    #     print("You did not provide a path to a folder with a Books.json in it as argument. Put it as a parameter after examine.py")
-    #     exit()
-    # sourcefolder = sys.argv[1]
     sourcefolder = "../tripitaka/pli/ms"
+    # directory = os.getcwd()[:-7] +  "/md"
     print("start parsing ...")
-    # import_booklist(sourcefolder)
-    # if len(booklist) > 0:
-    #     parse_list()
-    # with open("kjv.txt", "w") as text_file:
-    #     text_file.write(output)
+    current_folder = ""
+    folder = ""
+    current_json_files = 0
+    total_files = 0
+    total_folders = 0
+    folders_sutta = 0
+    folders_abhidhamma = 0
+    folders_vinaya = 0
+    files_sutta = 0
+    files_abhidhamma = 0
+    files_vinaya = 0
+    nr_json = 0
+    for root, dirs, files in os.walk(sourcefolder):
+        for filename in files:
+            if filename.endswith(".json"):
+                nr_json += 1
+            # if not filename.startswith("."):
+                total_files += 1
+                if root != current_folder:
+                    if current_json_files > 0:
+                        folder = current_folder[19:]
+                        print(f"{folder}/: {current_json_files} files")
+                        total_folders += 1
+                        if folder[1:6] == "sutta":
+                            folders_sutta += 1
+                            files_sutta += 1
+                        if folder[1:6] == "vinay":
+                            folders_vinaya += 1
+                            files_vinaya += 1
+                        if folder[1:6] == "abhid":
+                            folders_abhidhamma += 1
+                            files_abhidhamma += 1
+                    current_json_files = 1
+                    current_folder = root
+                else:
+                    current_json_files += 1
+                    if folder[1:6] == "sutta":
+                        files_sutta += 1
+                    if folder[1:6] == "vinay":
+                        files_vinaya += 1
+                    if folder[1:6] == "abhid":
+                        files_abhidhamma += 1                    
+    print(f"{folder}/: {current_json_files} files")
+    folders_abhidhamma +=1
+    files_abhidhamma += current_json_files
+    
+    print(f"\nIn total we have {total_files} files in {total_folders} folders.")
+    print(f"Folders Vinaya: {folders_vinaya}      with {files_vinaya} files.")
+    print(f"Folders Sutta: {folders_sutta}      with {files_sutta} files.")
+    print(f"Folders Abhidhamma: {folders_abhidhamma}  with {files_abhidhamma} files.")
+    print(f"Does this allign with a total of {nr_json} JSON files?")
+                # print(os.path.join(root, filename))       
+            # print(root, " - ", dirs, " - ", filename)
