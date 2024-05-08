@@ -56,7 +56,7 @@ def extend_print(bookname, nr_chapter, nr_verse, text_verse):
             current_column = 0
         if current_line > 49:
             add_pagebreak()
-            output += bookname + " " + str(nr_chapter) + "\n\n"
+            output += f"{bookname} {nr_chapter}:{nr_verse} \n\n"
 
 def add_pagebreak():
     global number_pages, output, current_line
@@ -91,7 +91,7 @@ def decrypt(key):
 
 
 def parse_list():
-    global jsonlist, number_pages, output, current_column, list_books
+    global jsonlist, number_pages, output, current_column, current_line, list_books
     number_books      = 0
     number_chapters   = 0
     number_verses     = 0
@@ -103,31 +103,53 @@ def parse_list():
     # add_pagebreak()
     current_book    = ""
     current_chapter = ""
-    current_verse   = "0"
+    current_verse   = "1"
     verseline       = ""
+    fix_html_b      = 0
     for jsonname in jsonlist: # here referring to each json file of the 7288
         f = open(jsonname)
         jsonfile = json.load(f)
         for key in jsonfile: # the key is the indication of book, chapter, verse
             textline = jsonfile[key]
+            if textline.find("<b>") > 0:
+                b = textline.find("<b>")
+                textline = textline[:b] + textline[b+3:]
+                b = textline.find("</b>")
+                textline = textline[:b] + textline[b+4:]
+                fix_html_b += 1
+                # print(textline)
             key_book, key_chapter, key_verse = decrypt(key)
             if current_book != key_book:
+                if len(verseline) > 0:
+                    extend_print(current_book, current_chapter, current_verse, verseline)
+                    output += "\n\n"
+                    current_line += 2
+                verseline = ""
                 current_book = key_book
+                current_chapter = key_chapter
+                current_verse = key_verse
                 if not current_book in list_books:
                     number_books += 1
                     list_books.append(current_book)
                     output += current_book + "\n\n"
+                    current_line += 2
+                    print(f"New book: {key_book}")
             if current_chapter != key_chapter:
                 number_chapters += 1
+                extend_print(current_book, current_chapter, current_verse, verseline)
+                verseline = ""
                 current_chapter = key_chapter
+                current_verse = key_verse
+                # print(".", end="")
             if current_verse != key_verse:
                 number_verses += 1
                 extend_print(current_book, current_chapter, current_verse, verseline)
-                verseline = ""
+                # print("old: ", current_book, current_chapter, current_verse, verseline, " - new: ", key, key_book, key_chapter, key_verse, )
                 current_verse = key_verse
+                verseline = ""
             verseline += textline
             # print(f"{key}  - book: {internal_bookname} {internal_chapter}:{internal_verse}")
-            extend_print(current_book, current_chapter, current_verse, textline)
+            # extend_print(current_book, current_chapter, current_verse, textline)
             sentences = nltk.sent_tokenize(textline)
             for sentence in sentences:
                 number_sentences += 1
@@ -148,6 +170,7 @@ def parse_list():
     print(f"Parsed: {number_words} words.")
     print(f"Parsed: {number_letters} letters or characters.")
     print(f"Parsed: {number_pages} pages 80x50.")
+    print(f"Fixed {fix_html_b} html tags <b> and </b>")
 
 if __name__ == "__main__":
     # if len(sys.argv) < 2:
