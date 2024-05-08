@@ -59,7 +59,7 @@ def extend_print(bookname, nr_chapter, nr_verse, text_verse):
             output += f"{bookname} {nr_chapter}:{nr_verse} \n\n"
 
 def add_pagebreak():
-    global number_pages, output, current_line
+    global output, current_line, number_pages
     if current_line < 49:
         for i in range(49 - current_line):
             output += "\n"
@@ -70,8 +70,6 @@ def add_pagebreak():
     output += "\n"
     current_line = -2
     number_pages += 1
-    if number_pages % 100 == 0:
-        print(f"Number pages: {number_pages}")
 
 def decrypt(key):
     # determine internal name for book, chapter and verse - but sometimes chapter is missing!
@@ -91,24 +89,25 @@ def decrypt(key):
 
 
 def parse_list():
-    global jsonlist, number_pages, output, current_column, current_line, list_books
+    global output, current_line, current_column
+    number_json       = 0
     number_books      = 0
     number_chapters   = 0
     number_verses     = 0
     number_sentences  = 0
     number_words      = 0
     number_letters    = 0
-    # output += "\n"*25
-    # output += "                      Project 'examine large textbodies'\n"
-    # add_pagebreak()
-    current_book    = ""
-    current_chapter = ""
-    current_verse   = "1"
+    current_book      = ""
+    current_chapter   = ""
+    current_verse     = "1"
+    current_page      = 0
     verseline       = ""
     fix_html_b      = 0
     for jsonname in jsonlist: # here referring to each json file of the 7288
         f = open(jsonname)
         jsonfile = json.load(f)
+        number_json += 1
+        # print(f"json: {jsonname}  - book: {current_book} {current_chapter}:{current_verse}")
         for key in jsonfile: # the key is the indication of book, chapter, verse
             textline = jsonfile[key]
             if textline.find("<b>") > 0:
@@ -133,7 +132,7 @@ def parse_list():
                     list_books.append(current_book)
                     output += current_book + "\n\n"
                     current_line += 2
-                    print(f"New book: {key_book}")
+                    # print(f"New book: {key_book} on page {current_page}")
             if current_chapter != key_chapter:
                 number_chapters += 1
                 extend_print(current_book, current_chapter, current_verse, verseline)
@@ -160,8 +159,16 @@ def parse_list():
                         number_words += 1
                         number_letters += len(word)
                         # print(word, end="_")
+            # Check for change in page numbers
+            if number_pages > current_page:
+                current_page = number_pages
+                if current_page % 100 == 0:
+                    print(f"pages: {number_pages} json-nr: {number_json}", end=" ")
+                    print(f"location: {current_book} {current_chapter}:{current_verse}", end=" ")
+                    print(f"books: {number_books} chapters:{number_chapters} verses: {number_verses}", end=" ")
+                    print(f"words: {number_words} characters: {number_letters} length:{len(output)}")
         f.close()
-        output += "\n\n\n"
+        # output += "\n\n\n"   # remnant from the bible - each json represents a book. Not so tripitaka
         current_column = 0
     print(f"Parsed: {number_books} books.")
     print(f"Parsed: {number_chapters} chapters.")
@@ -183,4 +190,5 @@ if __name__ == "__main__":
         parse_list()
     with open("tripitaka.txt", "w") as text_file:
         text_file.write(output)
-    print(list_books)
+    print(f"Exported tripitata.txt with {len(output)} characters.")
+    # print(list_books)

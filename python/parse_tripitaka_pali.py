@@ -37,11 +37,24 @@ def investigate(source, folder):
     return number_files, number_folders
 
 def convert_csv_to_json(pitakas):
+    global sourcefolder
+    jsonlist = []
     for pitaka in pitakas:
-        print(pitaka)
+        csvfile = sourcefolder + pitaka + ".csv"
+        with open(csvfile) as csv_file:
+            csv_reader = csv.reader(csv_file, delimiter=',')
+            for row in csv_reader:
+                if row[0] != "path":
+                    jsonfile = row[0] + "/" + row[1]
+                    jsonlist.append(jsonfile)
+    jsonfilelist = sourcefolder + "Books.json"
+    with open(jsonfilelist, "w", encoding="utf-8", newline='\r\n') as final:
+        json.dump(jsonlist, final, indent=0)
+    print(f"Exported list of {len(jsonlist)} json source files to {jsonfilelist}.")
 
 if __name__ == "__main__":
-    f = [ "vinaya", "sutta", "abhidhamma"]
+    # f = ["vinaya", "sutta", "abhidhamma"]
+    f = ["vinaya"]
     sourcefolder = "../tripitaka/pli/ms/"
     print(f'\nParse the 3 folders {f} in {sourcefolder}')
     for folder in f:
