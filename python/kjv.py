@@ -1,6 +1,6 @@
 # Examine the kjv text in JSON format for a defined search criteria
 
-import os, sys, json, nltk
+import os, sys, json, nltk, csv
 
 # Check execution location, exit if not in /python
 if os.getcwd()[-6:] != "python":
@@ -9,9 +9,10 @@ if os.getcwd()[-6:] != "python":
 
 booklist = []
 output = ""
-number_pages = 1
-current_line = 0
+number_pages   = 1
+current_line   = 0
 current_column = 0
+content_detail = [["book", "chapters", "verses", "sentences", "words", "letters", "pages"]]
 
 def import_booklist(sourcefolder):
     global booklist
@@ -34,6 +35,7 @@ def import_booklist(sourcefolder):
 
 def extend_print(bookname, nr_chapter, nr_verse, text_verse):
     global output, current_line, current_column
+    pagebreak = False
     if nr_verse == '1':
         remaining_txt = f"|{nr_chapter}| " + text_verse + " "
     else:
@@ -57,6 +59,8 @@ def extend_print(bookname, nr_chapter, nr_verse, text_verse):
         if current_line > 49:
             add_pagebreak()
             output += bookname + " " + nr_chapter + "\n\n"
+            pagebreak = True
+    return pagebreak
 
 def add_pagebreak():
     global number_pages, output, current_line
@@ -70,8 +74,6 @@ def add_pagebreak():
     output += "\n"
     current_line = -2
     number_pages += 1
-    if number_pages % 100 == 0:
-        print(f"Number pages: {number_pages}")
 
 def parse_list():
     global booklist, number_pages, output, current_column
@@ -81,6 +83,12 @@ def parse_list():
     number_sentences  = 0
     number_words      = 0
     number_letters    = 0
+    current_chapters  = 0
+    current_verses    = 0
+    current_sentences = 0
+    current_words     = 0
+    current_letters   = 0
+    current_pages     = 1
     # output += "\n"*25
     # output += "                      Project 'examine large textbodies'\n"
     # add_pagebreak()
@@ -96,7 +104,9 @@ def parse_list():
             for verse in chapter['verses']:
                 number_verses += 1
                 nr_verse = verse['verse']
-                extend_print(book_name, nr_chapter, nr_verse, verse['text'])
+                pb = extend_print(book_name, nr_chapter, nr_verse, verse['text'])
+                if number_pages % 100 == 0 and pb:
+                    print(f"pages: {number_pages} chapters: {number_chapters} verses: {number_verses} words: {number_words}")
                 sentences = nltk.sent_tokenize(verse['text'])
                 for sentence in sentences:
                     number_sentences += 1
@@ -110,6 +120,20 @@ def parse_list():
         f.close()
         output += "\n\n\n"
         current_column = 0
+        current_chapters   = number_chapters  - current_chapters
+        current_verses     = number_verses    - current_verses
+        current_sentences  = number_sentences - current_sentences
+        current_words      = number_words     - current_words
+        current_letters    = number_letters   - current_letters
+        current_pages      = number_pages     - current_pages
+        content_detail.append([book_name, current_chapters, current_verses, current_sentences, current_words, current_letters, current_pages])
+        current_chapters   = number_chapters
+        current_verses     = number_verses
+        current_sentences  = number_sentences
+        current_words      = number_words
+        current_letters    = number_letters
+        current_pages      = number_pages
+
     print(f"Parsed: {number_books} Books.")
     print(f"Parsed: {number_chapters} Chapters.")
     print(f"Parsed: {number_verses} Verses.")
@@ -129,3 +153,7 @@ if __name__ == "__main__":
         parse_list()
     with open("kjv.txt", "w") as text_file:
         text_file.write(output)
+    # print(content_detail)
+    with open("kjv_details.csv", "w", newline='') as csv_file:
+        writer = csv.writer(csv_file)
+        writer.writerows(content_detail)

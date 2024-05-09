@@ -4,7 +4,7 @@ Make the text of the Tripitaka searchable for phrases and statistics. And compar
 
 ## Bible in the King James version
 
-<img src="docs/size_kjv.png" width="30%" align="right">
+<img src="size_kjv.png" width="30%" align="right">
 
 - 66 books (5.2 MByte in 66 JSON files, from [Arul John](https://github.com/aruljohn/Bible-kjv))
 - 1,189 chapters
@@ -16,7 +16,7 @@ Make the text of the Tripitaka searchable for phrases and statistics. And compar
 
 ## Tripitaka in the Pali version by the [The Vipassana Research Institute (VRI)](https://www.vridhamma.org/Tipitaka-Project)
 
-<img src="docs/size_kuthodaw_small.png" width="30%" align="right">
+<img src="size_kuthodaw_small.png" width="30%" align="right">
 
 The structure of the Tripitaka is more diverse and not as uniform as in the bible. A first parsing run over the 7288 json files from the [Pali edition](https://github.com/suttacentral/bilara-data) resulted in the following statistics:
 
@@ -41,7 +41,7 @@ Combined thats 40.7 MByte and roughly 10x larger than the KJV project. There is 
 
 Another size comparison source: [The Vipassana Research Institute (VRI)](https://www.vridhamma.org/Tipitaka-Project) in India states that the Tripitaka makes up 24 million characters. My count on KJV revealed 3.2 million. So the order of magnitude seems correct.
 
-![Size based on pages in the Kuthodaw Pagoda](docs/size_kuthodaw.png)
+![Size based on pages in the Kuthodaw Pagoda](size_kuthodaw.png)
 
 The above graph was created based on the used tablets used for the baskets in the [largest book of the world with 729 tablets](https://en.wikipedia.org/wiki/Tripi%E1%B9%ADaka_tablets_at_Kuthodaw_Pagoda) in Mandalay. It assumes that the content of each of the tablets is roughly the same.
 
@@ -144,7 +144,7 @@ In detail that is:
 
 Since I have the complete bible in well organized and structured 66 JSON files available it was a question of a few hours to get some statistics out of it. Let's start with a visualization of the size of the 66 books - some smaller ones are not labeled:
 
-![pie chart kjv](docs/size_kjv.png)
+![pie chart kjv](size_kjv.png)
 
 We can now break down each book into the number of chapteres, verses, sentences, words, characters and pages needed in a print:
 
