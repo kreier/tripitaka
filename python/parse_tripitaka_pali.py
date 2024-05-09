@@ -27,6 +27,7 @@ def investigate(source, folder):
                     # files_in_folder = number_files
     # print(number_files - files_in_folder)
     header_list = ['path', 'file']
+    list_output.sort()
     # print(list_output)
     filename = source + folder + '.csv'
     with open(filename, 'w', newline='') as csvfile:
