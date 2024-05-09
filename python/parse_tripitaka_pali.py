@@ -55,7 +55,7 @@ def convert_csv_to_json(pitakas):
 
 if __name__ == "__main__":
     # f = ["vinaya", "sutta", "abhidhamma"]
-    f = ["vinaya"]
+    f = ["abhidhamma"]
     sourcefolder = "../tripitaka/pli/ms/"
     print(f'\nParse the 3 folders {f} in {sourcefolder}')
     for folder in f:

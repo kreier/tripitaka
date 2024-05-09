@@ -55,9 +55,9 @@ The above graph was created based on the used tablets used for the baskets in th
 
 A python script run will hopefully give some further insight into the size of the Tipitaka similar to the KJV above from 2024/05/01.
 
-## Three baskets of the Tipitaka
+More details on the three baskets of the Tipitaka:
 
-### [Vinaya Piṭaka](https://en.wikipedia.org/wiki/Vinaya_Pi%E1%B9%ADaka) (_Basket of Discipline_)
+## [Vinaya Piṭaka](https://en.wikipedia.org/wiki/Vinaya_Pi%E1%B9%ADaka) (_Basket of Discipline_)
 
 - [Suttavibhaṅga](https://en.wikipedia.org/wiki/Suttavibhanga): [Pāṭimokkha](https://en.wikipedia.org/wiki/P%C4%81%E1%B9%ADimokkha) and commentary
   - Mahāvibhaṅga: 227 rules for fully ordained monks ([bhikkhus](https://en.wikipedia.org/wiki/Bhikkhu))
@@ -65,20 +65,20 @@ A python script run will hopefully give some further insight into the size of th
 - [Khandhaka](https://en.wikipedia.org/wiki/Khandhaka) 22 chapters on various topics
 - [Parivāra](https://en.wikipedia.org/wiki/Pariv%C4%81ra) 19 chapters with analyses of rules from various points of view
 
-### [Sutta Pitaka](https://en.wikipedia.org/wiki/Sutta_Pi%E1%B9%ADaka) - 5 Nikāyas - 34 + 152/222 + 2854/7762 + 169/186 + (15/18 books) suttras
+## [Sutta Pitaka](https://en.wikipedia.org/wiki/Sutta_Pi%E1%B9%ADaka) - 5 Nikāyas - 34 + 152/222 + 2854/7762 + 169/186 + (15/18 books) suttras
 
-#### - [Dīgha Nikāya](https://en.wikipedia.org/wiki/D%C4%ABgha_Nik%C4%81ya) ("Collection of Long Discourses") - 34 suttras
+### [Dīgha Nikāya](https://en.wikipedia.org/wiki/D%C4%ABgha_Nik%C4%81ya) ("Collection of Long Discourses") - 34 suttras
 
 - Silakkhandha-vagga — _The Division Concerning Morality_ (suttas 1-13)
 - Maha-vagga — _The Great Division_ (suttas 14-23)
 - Patika-vagga — _The Patika Division_ (suttas 24-34)
 
-#### - [Majjhima Nikāya](https://en.wikipedia.org/wiki/Majjhima_Nik%C4%81ya) ("Collection of Middle-length Discourses") - 152 or 222 suttras
+### [Majjhima Nikāya](https://en.wikipedia.org/wiki/Majjhima_Nik%C4%81ya) ("Collection of Middle-length Discourses") - 152 or 222 suttras
 
 - 222 sūtras (Sarvāstivāda school)
 - 152 suttas in the Pāli Majjhima Nikāya, the version I analyzed
 
-#### - [Saṃyutta Nikāya](https://en.wikipedia.org/wiki/Sa%E1%B9%83yutta_Nik%C4%81ya) ("Connected Discourses" or "Kindred Sayings") - 2854 to 7762 suttras
+### [Saṃyutta Nikāya](https://en.wikipedia.org/wiki/Sa%E1%B9%83yutta_Nik%C4%81ya) ("Connected Discourses" or "Kindred Sayings") - 2854 to 7762 suttras
 
 - Burmese edition: 2854 suttras
 - Pali Text Society edition: 2889 suttras
@@ -101,7 +101,7 @@ A python script run will hopefully give some further insight into the size of th
     - SN 51-55
     - SN 56 the Truths
 
-#### - [Aṅguttara Nikāya](https://en.wikipedia.org/wiki/A%E1%B9%85guttara_Nik%C4%81ya) (aṅguttaranikāya; lit. 'Increased-by-One Collection', also translated "Gradual Collection" or "Numerical Discourses") - 11 nipatos, 186 or 169 or thousands os suttras
+### [Aṅguttara Nikāya](https://en.wikipedia.org/wiki/A%E1%B9%85guttara_Nik%C4%81ya) (aṅguttaranikāya; lit. 'Increased-by-One Collection', also translated "Gradual Collection" or "Numerical Discourses") - 11 nipatos, 186 or 169 or thousands os suttras
 
 - Ekakanipāto (The Book of Ones) 20 suttras?
 - Dukanipāto (The Book of Twos) 19
@@ -115,7 +115,7 @@ A python script run will hopefully give some further insight into the size of th
 - Dasakanipāto (The Book of Tens) 23
 - Ekādasako nipāto (The Book of Elevens) 4
 
-#### - [Khuddaka Nikāya](https://en.wikipedia.org/wiki/Khuddaka_Nik%C4%81ya) (lit. 'Minor Collection') - 15 to 18 books
+### [Khuddaka Nikāya](https://en.wikipedia.org/wiki/Khuddaka_Nik%C4%81ya) (lit. 'Minor Collection') - 15 to 18 books
 
 - [Khuddakapatha](https://en.wikipedia.org/wiki/Khuddakap%C4%81%E1%B9%ADha) (Pali for "short passages") - 9 discourses
 - [Dhammapada](https://en.wikipedia.org/wiki/Dhammapada) - 423 verses in 26 chapters, most widely read
@@ -141,7 +141,7 @@ A python script run will hopefully give some further insight into the size of th
 - [Petakopadesa](https://en.wikipedia.org/wiki/Pe%E1%B9%ADakopadesa) (included in Burmese and Sinhalese editions, but not in Thai edition) - 8 sections
 - [Milindapañha](https://en.wikipedia.org/wiki/Milinda_Panha) (lit. 'Questions of Milinda', included in Burmese edition, but not in Sinhalese and Thai editions) - 2 volumes?
 
-#### [Abhidhamma Piṭaka](https://en.wikipedia.org/wiki/Abhidhamma_Pi%E1%B9%ADaka) (_Basket of Higher Doctrine_) - 7 books
+## [Abhidhamma Piṭaka](https://en.wikipedia.org/wiki/Abhidhamma_Pi%E1%B9%ADaka) (_Basket of Higher Doctrine_) - 7 books
 
   - [Dhammasaṅgaṇī](https://en.wikipedia.org/wiki/Dhammasa%E1%B9%85ga%E1%B9%87%C4%AB) (-saṅgaṇi or -saṅgaṇī)
   - [Vibhaṅga](https://en.wikipedia.org/wiki/Vibha%E1%B9%85ga) (vibhaṅga)
@@ -149,7 +149,7 @@ A python script run will hopefully give some further insight into the size of th
   - [Puggalapaññatti](https://en.wikipedia.org/wiki/Puggalapa%C3%B1%C3%B1atti) (-paññatti)
   - [Kathāvatthu](https://en.wikipedia.org/wiki/Kath%C4%81vatthu) (kathā-)
   - [Yamaka](https://en.wikipedia.org/wiki/Yamaka)
-  - [Paṭṭhāna](https://en.wikipedia.org/wiki/Pa%E1%B9%AD%E1%B9%ADh%C4%81na) (paṭṭhāna)
+  - [Paṭṭhāna](https://en.wikipedia.org/wiki/Pa%E1%B9%AD%E1%B9%ADh%C4%81na) (paṭṭhāna) - 24 types of conditional relations (the Buddhist belief that causality — not a Creator deity — is the basis of existence) on some 1000 pages
 
 # More details in comparison
 
@@ -291,7 +291,17 @@ Now even more details:
 - Puggalapaññatti (-paññatti)
 - Kathāvatthu (kathā-)
 - Yamaka
-- Paṭṭhāna (paṭṭhāna)
+- [Paṭṭhāna](https://en.wikipedia.org/wiki/Pa%E1%B9%AD%E1%B9%ADh%C4%81na) (paṭṭhāna) 24 types of conditional relations (the Buddhist belief that causality — not a Creator deity — is the basis of existence) on some 1400 pages
+
+| Abhidhamma Piṭaka | json | folders | books | chapters | verses | sentences |  words  | characters | pages | html fix |   bytes   |
+|-------------------|:----:|:-------:|:-----:|:--------:|:------:|:---------:|:-------:|:----------:|:-----:|:--------:|:---------:|
+| ds                |   21 |       3 |     2 |       19 |  2,158 |     8,671 |  53,641 |    405,137 |   124 |      328 |   578,026 |
+| dt                |   19 |       3 |     2 |       17 |    643 |     3,131 |  17,945 |    131,336 |    40 |        0 |   177,070 |
+| kv                |  219 |      24 |    23 |      196 |  2,519 |    19,640 |  85,076 |    616,259 |   188 |        0 |   877,996 |
+| patthana          |  728 |      25 |    24 |      704 | 20,221 |    47,896 | 429,338 |  3,534,375 | 1,073 |    1,488 | 4,830,994 |
+| pp                |   20 |       3 |     2 |       18 |    550 |     1,863 |  15,120 |    112,387 |    35 |        0 |   154,532 |
+| vb                |   18 |       1 |    18 |        0 |  3,258 |    13,012 |  84,217 |    645,914 |   200 |        0 |   912,905 |
+| ya                |   77 |      11 |    10 |       67 | 13,209 |    23,998 | 179,160 |  1,438,665 |   446 |        0 | 1,951,786 |
 
 ## Sources
 
