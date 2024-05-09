@@ -12,32 +12,36 @@ Make the text of the Tripitaka searchable for phrases and statistics. And compar
 - 35,049 sentences
 - 790,573 words
 - 3,223,201 characters
-- 1062 pages if [printed 80x50 per page](https://raw.githubusercontent.com/kreier/tripitaka/main/python/kjv.txt) (Consolas 11pt on A4 with 17/19mm border - 4.3 MByte as text file)
+- 1062 pages if printed 80x50 per page (Consolas 11pt on A4 with 17/19mm border - [4.3 MByte as text file](https://raw.githubusercontent.com/kreier/tripitaka/main/python/kjv.txt))
 
 ## Tripitaka in the Pali version by the [The Vipassana Research Institute (VRI)](https://www.vridhamma.org/Tipitaka-Project)
 
 <img src="size_kuthodaw_small.png" width="30%" align="right">
 
-The structure of the Tripitaka is more diverse and not as uniform as in the bible. A first parsing run over the 7288 json files from the [Pali edition](https://github.com/suttacentral/bilara-data) resulted in the following statistics:
+The structure of the Tripitaka is more diverse and not as uniform as in the bible. A parsing run over the 7288 json files from the [Pali edition](https://github.com/suttacentral/bilara-data) resulted in the following statistics:
 
-- JSON	books	chapters	verses	sentences	words	characters	pages	size
-7273	2782	5273	99,567	481,994	3,007,818	22,439,824	7,013
 - 2,782 books
 - 5,273 chapters
 - 99,567 verses
-- 481,994	sentences
-- 3,007,818 words
-- 22,439,824 characters or letters
-- 7,013 pages if printed 80x50 per page (Consolas 11pt on A4 with 17/19mm border - 4.3 MByte as text file)
+- 481,994	sentences - 13.8x kjv
+- 3,007,818 words - 3.8x kjv
+- 22,439,824 characters or letters - 6.9x kjv
+- 7,013 pages if printed 80x50 per page (Consolas 11pt on A4 with 17/19mm border - 31.4 MByte as text file, 6.6x kjv)
 
+In detail for the three Baskets this results in :
 
-The three Baskets in the [Pali edition](https://github.com/suttacentral/bilara-data):
+- Vinaya Piṭaka has 412 books with 450,529 words on 1039 pages, [4.7 MByte textfile](https://raw.githubusercontent.com/kreier/tripitaka/main/python/tripitaka_vinaya.txt)
+- Sutta Piṭaka has 2289 books with 1,692,792 words on 3872 pages, [17.2 MByte textfile](https://raw.githubusercontent.com/kreier/tripitaka/main/python/tripitaka_sutta.txt)
+- Abhidhamma Piṭaka has 81 books with 864,497 words on 2102 pages, [9.5 MByte textfile](https://raw.githubusercontent.com/kreier/tripitaka/main/python/tripitaka_abhidhamma.txt)
 
-- Vinaya Piṭaka has 422 JSON items in 18 folders that combined need 6.7 MByte
-- Sutta Piṭaka has 5764 JSON items in 110 folders that combined need 22.8 MByte
-- Abhidhamma Piṭaka has 1102 JSON items in 64 folders, combined 11.2 MByte
+|                   | books | chapters | verses | sentences |   words   | characters | pages |    size    |
+|-------------------|:-----:|:--------:|:------:|:---------:|:---------:|:----------:|:-----:|:----------:|
+| Vinaya Piṭaka     |   412 |        8 |  4,259 |    73,833 |   450,529 |  3,363,421 | 1,039 |  4.7 MByte |
+| Abhidhamma Piṭaka |    81 |     1021 | 42,558 |   118,211 |   864,497 |  6,884,073 | 2,102 |  9.5 MByte |
+| Sutta Pitaka      |  2289 |     4244 | 52,750 |   289,950 | 1,692,792 | 12,192,330 | 3,872 | 17.2 MByte |
+| sum               |  2782 |     5273 | 99,567 |   481,994 | 3,007,818 | 22,439,824 | 7,013 | 31.4 MByte |
 
-Combined thats 40.7 MByte and roughly 10x larger than the KJV project. There is some JSON overhead and filesize to consider, but probably soon these files can be automatially parsed and at least for Pali a size estimation be generated. This version is stored in 7288 json files in 192 folders.
+Combined thats 31.4 MByte and roughly 7x larger than the KJV project. This version is stored in 7288 json files in 192 folders and has 22 million characters counted. More details further down below.
 
 Another size comparison source: [The Vipassana Research Institute (VRI)](https://www.vridhamma.org/Tipitaka-Project) in India states that the Tripitaka makes up 24 million characters. My count on KJV revealed 3.2 million. So the order of magnitude seems correct.
 
@@ -51,85 +55,92 @@ The above graph was created based on the used tablets used for the baskets in th
 
 A python script run will hopefully give some further insight into the size of the Tipitaka similar to the KJV above from 2024/05/01.
 
-- Vinaya Piṭaka, Sutta Piṭaka and Abhidhamma Piṭaka (incomplete JSON 108 MByte in 2218 files from [whizsid/tripitaka-api](https://github.com/whizsid/tripitaka-api))
-- 15 (5 + 3 + 7) nikayas (collections) of suttas
-- ? verses/suttras
-- ? paragraphs
-- ? sentences
-- ? words
-- ? characters
-- ? pages if printed 80x25 per page
+In more detail these 3 baskets contain:
 
-In detail that is:
-- Vinaya Piṭaka (_Basket of Discipline_)
-  - Suttavibhaṅga
-  - Khandhaka
-  - Parivāra (19 chapters)
-- Sutra Pitaka - 5 Nikāyas - 34 + 152/222 + 2854/7762 + 169/186 + (15/18 books) suttras
-  - Dīgha Nikāya ("Collection of Long Discourses") - 34 suttras
-    - Silakkhandha-vagga—The Division Concerning Morality (suttas 1-13)
-    - Maha-vagga—The Great Division (suttas 14-23)
-    - Patika-vagga—The Patika Division (suttas 24-34)
-  - Majjhima Nikāya ("Collection of Middle-length Discourses") - 152 or 222 suttras
-    - 222 sūtras (Sarvāstivāda school), 152 suttas in the Pāli Majjhima Nikāya
-  - Saṃyutta Nikāya ("Connected Discourses" or "Kindred Sayings") - 2854 to 7762 suttras
-    - Burmese edition: 2854 suttras
-    - Pali Text Society edition: 2889 suttras
-    - Bhikkhu Bodhi in his translation: 2904
-    - Rupert Gethin: 6696 suttras
-    - Sinhalese edition: 7656 suttras
-    - Bodhi commentaries: 7762 suttras
-    - The suttas/sūtras are grouped into five vargas/vaggas, or sections. Each varga/vagga is further divided into samyuttas/saṃyuktas, or chapters:
-      - Sagatha-vagga (SN1-11)
-      - Nidana-vagga (SN12-21)
-      - Khandha-vagga (SN22-34)
-      - Salayatana-vagga (SN35-44)
-      - Maha-vagga
-        - SN 45 the Noble Eightfold Path
-        - SN 46 the Seven Factors of Enlightenment
-        - SN 47 the Four Establishment of Mindfulness
-        - SN 48 the Faculties
-        - SN 49 the Four Right Striving
-        - SN 50 the Five Powers
-        - SN 51-55
-        - SN 56 the Truths
-  - Aṅguttara Nikāya (aṅguttaranikāya; lit. 'Increased-by-One Collection', also translated "Gradual Collection" or "Numerical Discourses") - 11 nipatos, 186 or 169 or thousands os suttras
-    - Ekakanipāto (The Book of Ones) 20 suttras?
-    - Dukanipāto (The Book of Twos) 19
-    - Tikanipāto (The Book of Threes) 18
-    - Catukkanipāto (The Book of Fours) 28
-    - Pañcakanipāto (The Book of Fives) 29
-    - Chakkanipāto (The Book of Sixes) 13
-    - Sattakanipāto (The Book of Sevens) 11
-    - Aṭṭhakanipāto (The Book of Eights) 11
-    - Navakanipāto (The Book of Nines) 10
-    - Dasakanipāto (The Book of Tens) 23
-    - Ekādasako nipāto (The Book of Elevens) 4
-  - Khuddaka Nikāya (lit. 'Minor Collection') - 15 to 18 books
-    - Khuddakapatha (Pali for "short passages") - 9 discourses
-    - Dhammapada - 423 verses in 26 chapters, most widely read
-    - Udana - 8 chapters, 80 utterances
-    - Itivuttaka - 112 short teachings
-    - Sutta Nipata - 5 sections, 70 suttas
-      - Uraga Vagga ("The Chapter on the Serpent") - 12 suttas
-      - Cūla Vagga ("The Minor Chapter") - 14 suttas
-      - Mahā Vagga ("The Great Chapter") - 12 suttas
-      - Atthaka Vagga "The Chapter of Octads" - 16 suttas
-      - Parayana Vagga ("The Chapter on the Way Beyond") - 16 suttas
-    - Vimanavatthu - 83 short stories
-    - Petavatthu - 51 verses, hungry ghost realm?
-    - Theragatha (Verses of the Elder Monks) - 264 poems, 21 chapters, 1279 verses (claim: 1360)
-    - Therigatha (Verses of the Elder Nuns) - 73 poems, 16 chapters, 494 verses
-    - Jataka - 550 fables that should teach virtues, but taken literal
-    - Niddesa - two commentaries by Sariputta: Maha Niddesa on the Atthaka Vagga, Cula Niddesa on the Parayana Vagga and Khaggavisana Sutta
-    - Patisambhidamagga - 30 chapters, first about knowledge
-    - Apadana - 589-603 poems
-    - Buddhavamsa (also known as the Chronicle of Buddhas) - 29 chapters - 24/28 Buddhas that preceded Gautama several billion years ago, some while riding on an elephant, being 26 meters large and having a stupa 307 km high ([Anomadassi](https://en.wikipedia.org/wiki/Anomadassi)) and living 100,000 years ([Tissa](https://en.wikipedia.org/wiki/Tissa_Buddha)) and having 6.8 million disciples ([Vipassī](https://en.wikipedia.org/wiki/Vipassī))
-    - Cariyapitaka - 35 stories, spanning 356 to 371 verses
-    - Nettipakarana or Netti (included in Burmese and Sinhalese editions, but not in Thai edition) - 2 divisions, 3 subsections, with 16 hāras, 5 naya and 18 mūlapadas, repeated in second subsection, expanded in third
-    - Petakopadesa (included in Burmese and Sinhalese editions, but not in Thai edition) - 8 sections
-    - Milindapañha (lit. 'Questions of Milinda', included in Burmese edition, but not in Sinhalese and Thai editions) - 2 volumes?
-- Abhidhamma Piṭaka (_Basket of Higher Doctrine_) - 7 books
+### [Vinaya Piṭaka](https://en.wikipedia.org/wiki/Vinaya_Pi%E1%B9%ADaka) (_Basket of Discipline_)
+
+- [Suttavibhaṅga](https://en.wikipedia.org/wiki/Suttavibhanga): [Pāṭimokkha](https://en.wikipedia.org/wiki/P%C4%81%E1%B9%ADimokkha) and commentary
+  - Mahāvibhaṅga: 227 rules for fully ordained monks ([bhikkhus](https://en.wikipedia.org/wiki/Bhikkhu))
+  - Bhikkhunīvibhaṅga: 311 (348 Dharmaguptaka, 364 Mulasarvastivada) rules for nuns ([bhikkhuṇīs](https://en.wikipedia.org/wiki/Bhikkhun%C4%AB))
+- [Khandhaka](https://en.wikipedia.org/wiki/Khandhaka) 22 chapters on various topics
+- [Parivāra](https://en.wikipedia.org/wiki/Pariv%C4%81ra) 19 chapters with analyses of rules from various points of view
+
+### [Sttra Pitaka](https://en.wikipedia.org/wiki/Sutta_Pi%E1%B9%ADaka) - 5 Nikāyas - 34 + 152/222 + 2854/7762 + 169/186 + (15/18 books) suttras
+
+#### Dīgha Nikāya ("Collection of Long Discourses") - 34 suttras
+
+- Silakkhandha-vagga—The Division Concerning Morality (suttas 1-13)
+- Maha-vagga—The Great Division (suttas 14-23)
+- Patika-vagga—The Patika Division (suttas 24-34)
+
+#### Majjhima Nikāya ("Collection of Middle-length Discourses") - 152 or 222 suttras
+
+- 222 sūtras (Sarvāstivāda school), 152 suttas in the Pāli Majjhima Nikāya
+
+#### Saṃyutta Nikāya ("Connected Discourses" or "Kindred Sayings") - 2854 to 7762 suttras
+
+- Burmese edition: 2854 suttras
+- Pali Text Society edition: 2889 suttras
+- Bhikkhu Bodhi in his translation: 2904
+- Rupert Gethin: 6696 suttras
+- Sinhalese edition: 7656 suttras
+- Bodhi commentaries: 7762 suttras
+- The suttas/sūtras are grouped into five vargas/vaggas, or sections. Each varga/vagga is further divided into samyuttas/saṃyuktas, or chapters:
+  - Sagatha-vagga (SN1-11)
+  - Nidana-vagga (SN12-21)
+  - Khandha-vagga (SN22-34)
+  - Salayatana-vagga (SN35-44)
+  - Maha-vagga
+    - SN 45 the Noble Eightfold Path
+    - SN 46 the Seven Factors of Enlightenment
+    - SN 47 the Four Establishment of Mindfulness
+    - SN 48 the Faculties
+    - SN 49 the Four Right Striving
+    - SN 50 the Five Powers
+    - SN 51-55
+    - SN 56 the Truths
+
+#### Aṅguttara Nikāya (aṅguttaranikāya; lit. 'Increased-by-One Collection', also translated "Gradual Collection" or "Numerical Discourses") - 11 nipatos, 186 or 169 or thousands os suttras
+
+- Ekakanipāto (The Book of Ones) 20 suttras?
+- Dukanipāto (The Book of Twos) 19
+- Tikanipāto (The Book of Threes) 18
+- Catukkanipāto (The Book of Fours) 28
+- Pañcakanipāto (The Book of Fives) 29
+- Chakkanipāto (The Book of Sixes) 13
+- Sattakanipāto (The Book of Sevens) 11
+- Aṭṭhakanipāto (The Book of Eights) 11
+- Navakanipāto (The Book of Nines) 10
+- Dasakanipāto (The Book of Tens) 23
+- Ekādasako nipāto (The Book of Elevens) 4
+
+#### Khuddaka Nikāya (lit. 'Minor Collection') - 15 to 18 books
+
+- Khuddakapatha (Pali for "short passages") - 9 discourses
+- Dhammapada - 423 verses in 26 chapters, most widely read
+- Udana - 8 chapters, 80 utterances
+- Itivuttaka - 112 short teachings
+- Sutta Nipata - 5 sections, 70 suttas
+  - Uraga Vagga ("The Chapter on the Serpent") - 12 suttas
+  - Cūla Vagga ("The Minor Chapter") - 14 suttas
+  - Mahā Vagga ("The Great Chapter") - 12 suttas
+  - Atthaka Vagga "The Chapter of Octads" - 16 suttas
+  - Parayana Vagga ("The Chapter on the Way Beyond") - 16 suttas
+- Vimanavatthu - 83 short stories
+- Petavatthu - 51 verses, hungry ghost realm?
+- Theragatha (Verses of the Elder Monks) - 264 poems, 21 chapters, 1279 verses (claim: 1360)
+- Therigatha (Verses of the Elder Nuns) - 73 poems, 16 chapters, 494 verses
+- Jataka - 550 fables that should teach virtues, but taken literal
+- Niddesa - two commentaries by Sariputta: Maha Niddesa on the Atthaka Vagga, Cula Niddesa on the Parayana Vagga and Khaggavisana Sutta
+- Patisambhidamagga - 30 chapters, first about knowledge
+- Apadana - 589-603 poems
+- Buddhavamsa (also known as the Chronicle of Buddhas) - 29 chapters - 24/28 Buddhas that preceded Gautama several billion years ago, some while riding on an elephant, being 26 meters large and having a stupa 307 km high ([Anomadassi](https://en.wikipedia.org/wiki/Anomadassi)) and living 100,000 years ([Tissa](https://en.wikipedia.org/wiki/Tissa_Buddha)) and having 6.8 million disciples ([Vipassī](https://en.wikipedia.org/wiki/Vipassī))
+- Cariyapitaka - 35 stories, spanning 356 to 371 verses
+- Nettipakarana or Netti (included in Burmese and Sinhalese editions, but not in Thai edition) - 2 divisions, 3 subsections, with 16 hāras, 5 naya and 18 mūlapadas, repeated in second subsection, expanded in third
+- Petakopadesa (included in Burmese and Sinhalese editions, but not in Thai edition) - 8 sections
+- Milindapañha (lit. 'Questions of Milinda', included in Burmese edition, but not in Sinhalese and Thai editions) - 2 volumes?
+
+#### Abhidhamma Piṭaka (_Basket of Higher Doctrine_) - 7 books
   - Dhammasaṅgaṇī (-saṅgaṇi or -saṅgaṇī)
   - Vibhaṅga (vibhaṅga)
   - Dhātukathā (dhātukathā)
@@ -219,7 +230,59 @@ We can now break down each book into the number of chapteres, verses, sentences,
 
 ## Pali edition of the Tripitaka
 
+![pie chart tripitaka](size_kuthodaw.png)
 
+We can now break down each basket into the number of chapteres, verses, sentences, words, characters and pages needed in a print:
+
+|                   | json | folders | books | chapters | verses | sentences |   words   | characters | pages | html fix |    size    |
+|-------------------|:----:|:-------:|:-----:|:--------:|:------:|:---------:|:---------:|:----------:|:-----:|:--------:|:----------:|
+| Vinaya Piṭaka     |  422 |      18 |   412 |        8 |  4,259 |    73,833 |   450,529 |  3,363,421 | 1,039 |        0 |  4.7 MByte |
+| Abhidhamma Piṭaka | 1102 |      64 |    81 |     1021 | 42,558 |   118,211 |   864,497 |  6,884,073 | 2,102 |     1816 |  9.5 MByte |
+| Sutta Pitaka      | 5749 |     110 |  2289 |     4244 | 52,750 |   289,950 | 1,692,792 | 12,192,330 | 3,872 |      331 | 17.2 MByte |
+| sum               | 7273 |     192 |  2782 |     5273 | 99,567 |   481,994 | 3,007,818 | 22,439,824 | 7,013 |     2147 | 31.4 MByte |
+
+I had to remove thousands of `<b>` and `</b>` tags in the json files.
+
+Now even more details:
+
+### Vinaya Piṭaka (_Basket of Discipline_)
+
+- [Suttavibhaṅga](https://en.wikipedia.org/wiki/Suttavibha%E1%B9%85ga) (Pali for "rule analysis") - 347 JSON files, 2.8 MByte
+  - [Pāṭimokkha](https://en.wikipedia.org/wiki/P%C4%81%E1%B9%ADimokkha) 227 rules for monks (bhikkhus) and 311 for nuns (bhikkhuṇīs)
+    - Bhikkhunīpātimokkhapāḷi __bi__ 333 verses, 947 lines, 100 kByte (total 127 JSON)
+      - Bhikkhunivibhaṅga - Adhikaraṇasamatha __bi-vb-as__ 5 verses, 33 lines, 2 kByte
+      - 6 Subfolder __bi-vb__ np(12), pc(94), pd(2), pj(5), sk(2), ss(10) - total 125 JSON files, 595 kByte
+    - Bhikkhupātimokkha __bu__ 225 verses, 754 lines, 75 kByte (total 222 JSON)
+      - Mahāvibhaṅga - Adhikaraṇasamatha __bu-vb-as__ 5 verses, 33 lines, 2 kByte
+      - 7 subfolder __bu-vb__ ay(2), np(30), pc(92), pd(4), pj(4), sk(75), ss(13) - total 220 JSON files, 2 MByte
+- [Khandhaka](https://en.wikipedia.org/wiki/Khandhaka) __kd__ 22 chapters, 22 JSON files, 2.9 MByte
+  - Mahavagga has 10 chapters
+  - Cullavagga has 12 chapters
+- [Parivāra](https://en.wikipedia.org/wiki/Pariv%C4%81ra) __pvr__ (19 or 21 chapters) - 12784 lines, 2475 verses, 51 JSON files, 1.1 MByte
+  - 1.1.0 to 1.1.332 - 2212 lines, 332 verses
+  - 1.2.0 to 1.16.4 - 1184 lines, 329 verses
+  - 2.1.0 to 2.1.186 - 1401 lines, 186 verses
+  - 2.2.0 to 2.16.6 - 923 lines, 224 verses
+  - 3.0 to 3.76 - 295 lines, 76 verses
+  - 4.0 to 21.87 - 6769 lines, 1328 verses
+
+### Sutra Pitaka - 5 Nikāyas - 34 + 152/222 + 2854/7762 + 169/186 + (15/18 books) suttras
+
+- Dīgha Nikāya ("Collection of Long Discourses") - 34 suttras
+- Majjhima Nikāya ("Collection of Middle-length Discourses") - 152 or 222 suttras
+- Saṃyutta Nikāya ("Connected Discourses" or "Kindred Sayings") - 2854 to 7762 suttras
+- Aṅguttara Nikāya (aṅguttaranikāya; lit. 'Increased-by-One Collection', also translated "Gradual Collection" or "Numerical Discourses") - 11 nipatos, 186 or 169 or thousands os suttras
+- Khuddaka Nikāya (lit. 'Minor Collection') - 15 to 18 books
+
+### Abhidhamma Piṭaka (_Basket of Higher Doctrine_) - 7 books
+
+- Dhammasaṅgaṇī (-saṅgaṇi or -saṅgaṇī)
+- Vibhaṅga (vibhaṅga)
+- Dhātukathā (dhātukathā)
+- Puggalapaññatti (-paññatti)
+- Kathāvatthu (kathā-)
+- Yamaka
+- Paṭṭhāna (paṭṭhāna)
 
 
 ## Sources
@@ -231,4 +294,3 @@ Similar projects have been done with the bible and having all 1189 chapters in J
 - [tripitaka.online](https://tripitaka.online/) only in Sinhala
 - [suttacentral](https://suttacentral.net/?lang=en) by [Bhante Sujato](https://en.wikipedia.org/wiki/Bhante_Sujato) in English, [Pali from VRI](https://discourse.suttacentral.net/t/what-is-the-difference-between-the-pali-text-of-the-vri-and-that-of-the-mahasa-giti/2667)
 - [theravada.vn](https://theravada.vn/tipitaka-english/) Vietnamese site with 541 English, 2722 Roman and 2034 Vietnamese suttras
-
