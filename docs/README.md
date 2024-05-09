@@ -1,6 +1,6 @@
 # Tripitaka
 
-Make the text of the Tripitaka searchable for phrases and statistics. And compare the results to the bible.
+Make the text of the Tripitaka searchable for phrases and statistics. And compare the results to the Bible.
 
 ## The Pali version by the [The Vipassana Research Institute (VRI)](https://www.vridhamma.org/Tipitaka-Project)
 
@@ -33,7 +33,7 @@ Combined thats 31.4 MByte and roughly 7x larger than the KJV project, for compar
 
 ## For comparison the Bible in the King James version
 
-<img src="docs/size_kjv.png" width="30%" align="right">
+<img src="size_kjv.png" width="30%" align="right">
 
 - 66 books (5.2 MByte in 66 JSON files, from [Arul John](https://github.com/aruljohn/Bible-kjv))
 - 1,189 chapters
@@ -45,7 +45,7 @@ Combined thats 31.4 MByte and roughly 7x larger than the KJV project, for compar
 
 ## Tripitaka size in tablets at the Kuthodaw Pagoda
 
-![Size based on pages in the Kuthodaw Pagoda](docs/size_kuthodaw.png)
+![Size based on pages in the Kuthodaw Pagoda](size_kuthodaw.png)
 
 The above graph was created based on the used tablets used for the baskets in the [largest book of the world with 729 tablets](https://en.wikipedia.org/wiki/Tripi%E1%B9%ADaka_tablets_at_Kuthodaw_Pagoda) in Mandalay. It assumes that the content of each of the tablets is roughly the same.
 
@@ -141,14 +141,15 @@ A python script run will hopefully give some further insight into the size of th
 - [Petakopadesa](https://en.wikipedia.org/wiki/Pe%E1%B9%ADakopadesa) (included in Burmese and Sinhalese editions, but not in Thai edition) - 8 sections
 - [Milindapañha](https://en.wikipedia.org/wiki/Milinda_Panha) (lit. 'Questions of Milinda', included in Burmese edition, but not in Sinhalese and Thai editions) - 2 volumes?
 
-#### Abhidhamma Piṭaka (_Basket of Higher Doctrine_) - 7 books
-  - Dhammasaṅgaṇī (-saṅgaṇi or -saṅgaṇī)
-  - Vibhaṅga (vibhaṅga)
-  - Dhātukathā (dhātukathā)
-  - Puggalapaññatti (-paññatti)
-  - Kathāvatthu (kathā-)
-  - Yamaka
-  - Paṭṭhāna (paṭṭhāna)
+#### [Abhidhamma Piṭaka](https://en.wikipedia.org/wiki/Abhidhamma_Pi%E1%B9%ADaka) (_Basket of Higher Doctrine_) - 7 books
+
+  - [Dhammasaṅgaṇī](https://en.wikipedia.org/wiki/Dhammasa%E1%B9%85ga%E1%B9%87%C4%AB) (-saṅgaṇi or -saṅgaṇī)
+  - [Vibhaṅga](https://en.wikipedia.org/wiki/Vibha%E1%B9%85ga) (vibhaṅga)
+  - [Dhātukathā](https://en.wikipedia.org/wiki/Dh%C4%81tukath%C4%81) (dhātukathā)
+  - [Puggalapaññatti](https://en.wikipedia.org/wiki/Puggalapa%C3%B1%C3%B1atti) (-paññatti)
+  - [Kathāvatthu](https://en.wikipedia.org/wiki/Kath%C4%81vatthu) (kathā-)
+  - [Yamaka](https://en.wikipedia.org/wiki/Yamaka)
+  - [Paṭṭhāna](https://en.wikipedia.org/wiki/Pa%E1%B9%AD%E1%B9%ADh%C4%81na) (paṭṭhāna)
 
 # More details in comparison
 
@@ -156,7 +157,7 @@ A python script run will hopefully give some further insight into the size of th
 
 Since I have the complete bible in well organized and structured 66 JSON files available it was a question of a few hours to get some statistics out of it. Let's start with a visualization of the size of the 66 books - some smaller ones are not labeled:
 
-![pie chart kjv](docs/size_kjv.png)
+![pie chart kjv](size_kjv.png)
 
 We can now break down each book into the number of chapteres, verses, sentences, words, characters and pages needed in a print:
 
@@ -231,7 +232,7 @@ We can now break down each book into the number of chapteres, verses, sentences,
 
 ## Pali edition of the Tripitaka
 
-![pie chart tripitaka](docs/size_kuthodaw.png)
+![pie chart tripitaka](size_kuthodaw.png)
 
 We can now break down each basket into the number of chapteres, verses, sentences, words, characters and pages needed in a print:
 

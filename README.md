@@ -1,6 +1,6 @@
 # Tripitaka
 
-Make the text of the Tripitaka searchable for phrases and statistics. And compare the results to the bible.
+Make the text of the Tripitaka searchable for phrases and statistics. And compare the results to the Bible.
 
 ## The Pali version by the [The Vipassana Research Institute (VRI)](https://www.vridhamma.org/Tipitaka-Project)
 
@@ -141,14 +141,15 @@ A python script run will hopefully give some further insight into the size of th
 - [Petakopadesa](https://en.wikipedia.org/wiki/Pe%E1%B9%ADakopadesa) (included in Burmese and Sinhalese editions, but not in Thai edition) - 8 sections
 - [Milindapañha](https://en.wikipedia.org/wiki/Milinda_Panha) (lit. 'Questions of Milinda', included in Burmese edition, but not in Sinhalese and Thai editions) - 2 volumes?
 
-#### Abhidhamma Piṭaka (_Basket of Higher Doctrine_) - 7 books
-  - Dhammasaṅgaṇī (-saṅgaṇi or -saṅgaṇī)
-  - Vibhaṅga (vibhaṅga)
-  - Dhātukathā (dhātukathā)
-  - Puggalapaññatti (-paññatti)
-  - Kathāvatthu (kathā-)
-  - Yamaka
-  - Paṭṭhāna (paṭṭhāna)
+#### [Abhidhamma Piṭaka](https://en.wikipedia.org/wiki/Abhidhamma_Pi%E1%B9%ADaka) (_Basket of Higher Doctrine_) - 7 books
+
+  - [Dhammasaṅgaṇī](https://en.wikipedia.org/wiki/Dhammasa%E1%B9%85ga%E1%B9%87%C4%AB) (-saṅgaṇi or -saṅgaṇī)
+  - [Vibhaṅga](https://en.wikipedia.org/wiki/Vibha%E1%B9%85ga) (vibhaṅga)
+  - [Dhātukathā](https://en.wikipedia.org/wiki/Dh%C4%81tukath%C4%81) (dhātukathā)
+  - [Puggalapaññatti](https://en.wikipedia.org/wiki/Puggalapa%C3%B1%C3%B1atti) (-paññatti)
+  - [Kathāvatthu](https://en.wikipedia.org/wiki/Kath%C4%81vatthu) (kathā-)
+  - [Yamaka](https://en.wikipedia.org/wiki/Yamaka)
+  - [Paṭṭhāna](https://en.wikipedia.org/wiki/Pa%E1%B9%AD%E1%B9%ADh%C4%81na) (paṭṭhāna)
 
 # More details in comparison
 
