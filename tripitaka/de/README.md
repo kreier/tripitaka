@@ -1,102 +1,45 @@
-# Tripitaka - as JSON files
+# Tripitaka in Teilen übersetzt in Deutsch
 
-The currently two folders are for the English translation (en) and the origianl Pali text (pli) in the Mahasangiti (ms) edition. "This is a revised and edited version of the text originally created by the Vipassana Research Institute (VRI)." [Bhante Sujato](https://en.wikipedia.org/wiki/Bhante_Sujato) on [suttacentral](https://discourse.suttacentral.net/t/what-is-the-difference-between-the-pali-text-of-the-vri-and-that-of-the-mahasa-giti/2667).
+In diesen Ordnern finden sich zur Zeit 3957 JSON Dateien mit Übersetzungen der [Sutta Pitaka](https://de.wikipedia.org/wiki/Suttapitaka) aus der [Tripitaka](https://de.wikipedia.org/wiki/Pali-Kanon). Die Sutta ist nicht vollständig (siehe weiter unten) und die [Vinayapitaka – Ordensregeln](https://de.wikipedia.org/wiki/Vinayapitaka) und [Abhidhammapitaka – Abhandlungen, Höhere Lehrreden](https://de.wikipedia.org/wiki/Abhidhammapitaka) fehlen.
 
-I just follow his structure, he devoted his life to organiz the scritures and translation.
+| Korb              | pli #json | pli Mbyte | de #json | de MByte | en #json | en MByte |
+|-------------------|----------:|----------:|---------:|---------:|---------:|---------:|
+| Vinaya Piṭaka     |       440 |       6.7 |        0 |        0 |        0 |        0 |
+| Sutta Piṭaka      |      5881 |      22.8 |     3957 |     11.3 |        0 |        0 |
+| Abhidhamma Piṭaka |      1173 |      11.2 |        0 |        0 |        0 |        0 |
+| Summe             |      7494 |      40.7 |     3957 |     11.3 |        0 |        0 |
 
-- Vinaya Piṭaka has 440 JSON items that combined need 6.7 MByte
-- Sutta Piṭaka has 5881 JSON items that combined need 22.8 MByte
-- Abhidhamma Piṭaka has 1173 JSON items, combined 11.2 MByte
+Innerhalb der Sutta Pitaka gibt es fünf Sammlungen (Nikayas), von denen einige nicht vollständig ins Deutsche übersetzt wurden. Siehe Liste:
 
-## Vinaya Piṭaka - Basket of Discipline
+## [Die Längere Sammlung (Dīgha-Nikāya)](https://de.wikipedia.org/wiki/Digha-Nikaya)
 
-It has 3 books with ?, 22 and 21 chapters each. These have ?, ? and 2475 verses. 347+22+51=420 JSON files.
+## [Die Mittlere Sammlung (Majjhima-Nikāya)](https://de.wikipedia.org/wiki/Majjhima-Nikaya)
 
-- [Suttavibhaṅga](https://en.wikipedia.org/wiki/Suttavibha%E1%B9%85ga) (Pali for "rule analysis") - 347 JSON files, 2.8 MByte
-  - [Pāṭimokkha](https://en.wikipedia.org/wiki/P%C4%81%E1%B9%ADimokkha) 227 rules for monks (bhikkhus) and 311 for nuns (bhikkhuṇīs)
-  - Bhikkhunīpātimokkhapāḷi __bi__ 333 verses, 947 lines, 100 kByte (total 127 JSON)
-    - Bhikkhunivibhaṅga - Adhikaraṇasamatha __bi-vb-as__ 5 verses, 33 lines, 2 kByte
-    - 6 Subfolder __bi-vb__ np(12), pc(94), pd(2), pj(5), sk(2), ss(10) - total 125 JSON files, 595 kByte
-  - Bhikkhupātimokkha __bu__ 225 verses, 754 lines, 75 kByte (total 222 JSON)
-    - Mahāvibhaṅga - Adhikaraṇasamatha __bu-vb-as__ 5 verses, 33 lines, 2 kByte
-    - 7 subfolder __bu-vb__ ay(2), np(30), pc(92), pd(4), pj(4), sk(75), ss(13) - total 220 JSON files, 2 MByte
-- [Khandhaka](https://en.wikipedia.org/wiki/Khandhaka) __kd__ 22 chapters, 22 JSON files, 2.9 MByte
-  - Mahavagga has 10 chapters
-  - Cullavagga has 12 chapters
-- [Parivāra](https://en.wikipedia.org/wiki/Pariv%C4%81ra) __pvr__ (19 or 21 chapters) - 12784 lines, 2475 verses, 51 JSON files, 1.1 MByte
-  - 1.1.0 to 1.1.332 - 2212 lines (3396 lines, 661 verses)
-  - 1.2.0 to 1.2.240 - 667 lines
-  - 1.3.0 to 1.3.3 - 11 lines
-  - 1.4.0 to 1.4.3 - 11 lines
-  - 1.5.0 to 1.5.3 - 11 lines
-  - 1.6.0 to 1.6.3 - 11 lines
-  - 1.7.0 to 1.7.3 - 11 lines
-  - 1.8.0 to 1.8.7 - 41 lines
-  - 1.9.0 to 1.9.28 - 238 lines
-  - 1.10.0 tp 1.10.20 - 93 lines
-  - 1.11.0 to 1.11.3 - 11 lines
-  - 1.12.0 to 1.12.3 - 11 lines
-  - 1.13.0 to 1.13.3 - 11 lines
-  - 1.14.0 to 1.14.3 - 9 lines
-  - 1.15.0 to 1.15.3 - 12 lines
-  - 1.16.0 to 1.16.4 - 47 lines
-  - 2.1.0 to 2.1.186 - 1401 lines (2324 lines, 410 verses)
-  - 2.2.0 to 2.2.143 - 431 lines
-  - 2.3.0 to 2.3.3 - 11 lines
-  - 2.4.0 to 2.4.3 - 11 lines
-  - 2.5.0 to 2.5.3 - 15 lines
-  - 2.6.0 to 2.6.3 - 9 lines
-  - 2.7.0 to 2.7.3 - 11 lines
-  - 2.8.0 to 2.8.5 - 47 lines
-  - 2.9.0 to 2.9.23 - 207 lines
-  - 2.10.0 to 2.10.17 - 84 lines
-  - 2.11.0 to 2.11.3 - 11 lines
-  - 2.12.0 to 2.12.3 - 11 lines
-  - 2.13.0 to 2.13.3 - 14 lines
-  - 2.14.0 to 2.14.3 - 9 lines
-  - 2.15.0 to 2.15.3 - 11 lines
-  - 2.16.0 to 2.16.6 - 52 lines
-  - 3.0 to 3.76 - 295 lines (7064 lines, 1404 verses from 3.0 to 21.87)
-  - 4.0 to 4.85 - 583 lines
-  - 5.0 to 5.177 - 623 lines
-  - 6.0 to 6.26 - 102 lines
-  - 7.0 to 7.153 - 1327 lines
-  - 8.0 to 8.11 - 74 lines
-  - 9.0 to 9.11 - 63 lines
-  - 10.0 to 10.84 - 374 lines
-  - 11.0 to 11.71 - 431 lines
-  - 12.0 to 12.22 - 94 lines
-  - 13.0 to 13.28 - 179 lines
-  - 14.0 to 14.16 - 59 lines
-  - 15.0 to 15.44 - 236 lines
-  - 16.0 to 16.59 - 347 lines
-  - 17.0 to 17.261 - 1109 lines
-  - 18.0 to 18.32 - 136 lines
-  - 19.0 to 19.110 - 450 lines
-  - 20.0 to 20.51 - 230 lines
-  - 21.0 to 21.87 - 352 lines
+## [Die Gruppierte Sammlung (Saṃyutta-Nikāya)](https://de.wikipedia.org/wiki/Samyutta-Nikaya)
 
-## Sutta Piṭaka
+## [Die Angereihte Sammlung (Anguttara-Nikāya)](https://de.wikipedia.org/wiki/Anguttara-Nikaya)
 
-## Abhidhamma Piṭaka
+## [Die Kleinere/Kürzere Sammlung (Khuddaka-Nikāya)](https://de.wikipedia.org/wiki/Khuddaka-Nikaya)
 
-# List of books and abbreviations - 1st level - 16 books
+1	Khuddaka-Pātha
+2	Dhammapada	Das ist mit großem Abstand das am häufigsten ins Deutsche übertragene Buch aus dem Pāli-Kanon. Die wohl bekanntesten Übersetzungen haben Paul Dahlke (1919), R. Otto Franke (1923), und Nyanatiloka (1943) angefertigt. In 24 Kapiteln werden allerlei Themen aus buddhistischer Sicht in Versform behandelt. Das Dhammapada zählt zu den wichtigsten Büchern des buddhistischen Kanons. Es ist für Anfänger (Einsteiger) als auch für Fortgeschrittene in der Lehre des Buddha wichtig und verständlich formuliert.
+3	Udāna	Udāna heißt wörtlich „Ausrufe“. 
+4	Itivuttaka - Aphorismen
+5	Sutta-Nipāt
+6 Vimāna-Vatthu	- Wege zum Himmel
+7 Peta-Vatthu	- Die Peta-Vatthu (Wege ins Totenreich) teilt sich vier Bücher mit insgesamt 61 Rahmenerzählungen und Versen. 
+8 Thera-Gāthā	- Die Verse der (Ordens-)Älteren sind entsprechend ihrer Anzahl angeordnet. Insgesamt kommen in diesem Buch 64 Mönche zu Wort, wobei der Mönch Vaṅgīsa im „Großen Kapitel“ mit 71 Versen am meisten zu sagen hat.
+9	Therī-Gāthā	- Die Verse der (ordens-)älteren Nonnen sind ebenfalls entsprechend der Anzahl ihrer Verse angeordnet.
+10 Jātaka - Die 547 „Wiedergeburts-Erzählungen“ sind entsprechend der Anzahl ihrer Verse angeordnet. 
+11 Niddesa	
+12 Paṭisambhidāmagga - Der analytische Weg
+13 Apadāna
+14 Buddhavaṃsa
+15 Cariyā-Piṭaka - In dieser „Sammlung“ sind 35 Stücke zusammengestellt, die in Versform den Lebenswandel des Buddha in früheren Existenzen darstellen, in denen er die jeweiligen Vollkommenheiten (pāramī) entwickelt hat.
+16 Nettippakarana (burmesischer Kanon)
+17 Petakopadesa (burmesischer Kanon)
+18 Milindapañhā - Die Fragen des Königs Milinda werden wohl nur im burmesischen Dreikorb als kanonisch betrachtet.
 
-On this first level we have 4 + 5 + 7 = 16 books, grouped in 3 baskets. Size comparison follows.
+Nur die ersten fünf Bücher (1 Khuddaka-Pātha, 2 Dhammapada, 3 Udana, 4 Itivuttaka - Aphorismen und 5 Sutta-Nipata – Bruchstücke) sowie 8 Theragatha – Sprüche der Mönche, 9 Therígatha – Sprüche der Nonnen, 15 Cariya Pitaka – Wandlungen und 18 Milindapanha sind ins Deutsche übersetzt (9 von 18). 
 
-- bi - 311/333 rules for nuns (bhikkhuṇīs)
-- bu - 227/225 rules for monks (bhikkhus)
-- kd - [Khandhaka](https://en.wikipedia.org/wiki/Khandhaka)
-- pvr - [Parivāra](https://en.wikipedia.org/wiki/Pariv%C4%81ra)
-- an - [Aṅguttara Nikāya](https://en.wikipedia.org/wiki/A%E1%B9%85guttara_Nik%C4%81ya), the "numerical" discourses.
-- dn - [Dīgha Nikāya](https://en.wikipedia.org/wiki/D%C4%ABgha_Nik%C4%81ya), the "long" discourses.
-- kn - [Khuddaka Nikāya](https://en.wikipedia.org/wiki/Khuddaka_Nik%C4%81ya), the "minor collection".
-- mn - [Majjhima Nikāya](https://en.wikipedia.org/wiki/Majjhima_Nik%C4%81ya), the "middle-length" discourses.
-- sn - [Saṃyutta Nikāya](https://en.wikipedia.org/wiki/Sa%E1%B9%83yutta_Nik%C4%81ya), the "connected" discourses.
-- ds -
-- dt -
-- kv -
-- patthana -
-- pp -
-- vb -
-- ya - 
+Es fehlen: 6 vv Vimana-Vathu – Götterpalastgeschichten, 7 pv Peta-Vathu – Gespenstergeschichten, 10 ja Jataka – Wiedergeburtsgeschichten, 11 mnd	Maha-Nidesa – Kommentare und 11	cnd	Cūḷaniddesa, 12 ps Pathisambhida-Magga – Kräfte der Heiligen, 13 tha-ap	Apadana – Erklärungen zur Heiligkeit, 13 thi-ap	Apadana – Erklärungen zur Heiligkeit, 14 bv	Buddhavamsa – Legenden der 24 Buddhas vor Gautama, 16 ne	Nettipakarana und 17 pe	Petakopadesa.
