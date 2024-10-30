@@ -155,33 +155,34 @@ More details on the three baskets of the Tipitaka:
 
 ## Size of the 3 baskets and their main 16 Collections
 
-I use the Pali text to estimate the pages needed to print the complete text 80x50 characters per page (Consolas 11pt on A4 with 17/19mm border)
+I used the Pali text to estimate the pages needed to print the complete text 80x50 characters per page (Consolas 11pt on A4 with 17/19mm border).
 
-| Basket | Vinaya Piṭaka (Basket of Discipline) | Sutta Pitaka - 5 Nikāyas | Abhidhamma Piṭaka (Basket of Higher Doctrine) |
-|--------|--------------------------------------|--------------------------|-----------------------------------------------|
-| Pages  | 1031                                 | 3872                     | 2106                                          |
-| Including | bu, bi, kd, pvr                   | dn, mn, sn, an, kn       | ds, vb, dt, pp, lv, ya, patthana              |
+| Basket    | [Vinaya Piṭaka](https://en.wikipedia.org/wiki/Vinaya_Pi%E1%B9%ADaka)          | [Sutta Pitaka](https://en.wikipedia.org/wiki/Sutta_Pi%E1%B9%ADaka) - 5 Nikāyas | [Abhidhamma Piṭaka](https://en.wikipedia.org/wiki/Abhidhamma_Pi%E1%B9%ADaka)                |
+|-----------|------------------------|--------------------------|----------------------------------|
+| Content   | (Basket of Discipline) | (Basket of Discourse)    | (Basket of Higher Doctrine)      |
+| Pages     | 1031                   | 3872                     | 2106                             |
+| Including | bu, bi, kd, pvr        | dn, mn, sn, an, kn       | ds, vb, dt, pp, lv, ya, patthana |
 
 ![Size of Tripitaka based on pages](size_tripitaka.png)
 
 | code     | name                | pages | content                                                                                            |
 |----------|---------------------|-------|----------------------------------------------------------------------------------------------------|
-| bu       | Bhikkhupātimokkha   |   309 | 227 rules for monks (bhikkhus) in the Pāṭimokkha, Suttavibhaṅga (“rule analysis”)                  |
+| bu       | [Bhikkhupātimokkha](https://en.wikipedia.org/wiki/P%C4%81%E1%B9%ADimokkha)   |   309 | 227 rules for monks (bhikkhus) in the [Pāṭimokkha](https://en.wikipedia.org/wiki/P%C4%81%E1%B9%ADimokkha), [Suttavibhaṅga](https://en.wikipedia.org/wiki/Suttavibha%E1%B9%85ga) (“rule analysis”)                  |
 | bi       | Bhikkhunīpātimokkha |   108 | 311 rules for nuns (bhikkhuṇīs)                                                                    |
-| kd       | Khandhaka           |   452 | 22 chapters on various topics                                                                      |
-| pvr      | Parivāra            |   162 | 19 chapters with analyses of rules from various points of view                                     |
-| ds       | Dhammasaṅgaṇī       |   124 | lit. 'Collection of Dhammas'                                                                       |
-| vb       | Vibhaṅga            |   200 | 18 chapters: aggregate, sense bases, elements, truth, faculties, dependent origination and more    |
-| dt       | Dhātukathā          |    40 | "Discourse on Elements" in the form of questions and answers, grouped into 14 chapters             |
-| pp       | Puggalapaññatti     |    35 | Classifications of persons, which are arranged numerically, from 1-fold to 10-fold.                |
-| kv       | Kathāvatthu         |   188 | "Points of Controversy", documents over 200 points of contention.                                  |
-| ya       | Yamaka              |   446 | यमक; Pali for "pairs", text on applied logic and analysis                                          |
-| patthana | Paṭṭhāna            |  1073 | 24 types of conditional relations, causality is the basis for existence                            |
-| dn       | Dīgha Nikāya        |   312 | "Collection of Long Discourses" - 34 suttras                                                       |
-| mn       | Majjhima Nikāya     |   573 | "Collection of Middle-length Discourses" - 152 or 222 suttras                                      |
-| sn       | Saṃyutta Nikāya     |   620 | "Connected Discourses" or "Kindred Sayings" - 2854 to 7762 suttras                                 |
-| an       | Aṅguttara Nikāya    |   709 | lit. 'Increased-by-One Collection', also translated "Gradual Collection" or "Numerical Discourses" |
-| kn       | Khuddaka Nikāya     |  1658 | lit. 'Minor Collection' - 15 to 18 books                                                           |
+| kd       | [Khandhaka](https://en.wikipedia.org/wiki/Khandhaka)           |   452 | 22 chapters on various topics                                                                      |
+| pvr      | [Parivāra](https://en.wikipedia.org/wiki/Pariv%C4%81ra)            |   162 | 19 chapters with analyses of rules from various points of view                                     |
+| ds       | [Dhammasaṅgaṇī](https://en.wikipedia.org/wiki/Dhammasa%E1%B9%85ga%E1%B9%87%C4%AB)       |   124 | lit. 'Collection of Dhammas'                                                                       |
+| vb       | [Vibhaṅga](https://en.wikipedia.org/wiki/Vibha%E1%B9%85ga)            |   200 | 18 chapters: aggregate, sense bases, elements, truth, faculties, dependent origination and more    |
+| dt       | [Dhātukathā](https://en.wikipedia.org/wiki/Dh%C4%81tukath%C4%81)          |    40 | "Discourse on Elements" in the form of questions and answers, grouped into 14 chapters             |
+| pp       | [Puggalapaññatti](https://en.wikipedia.org/wiki/Puggalapa%C3%B1%C3%B1atti)     |    35 | Classifications of persons, which are arranged numerically, from 1-fold to 10-fold.                |
+| kv       | [Kathāvatthu](https://en.wikipedia.org/wiki/Kath%C4%81vatthu)         |   188 | "Points of Controversy", documents over 200 points of contention.                                  |
+| ya       | [Yamaka](https://en.wikipedia.org/wiki/Yamaka)              |   446 | यमक; Pali for "pairs", text on applied logic and analysis                                          |
+| patthana | [Paṭṭhāna](https://en.wikipedia.org/wiki/Pa%E1%B9%AD%E1%B9%ADh%C4%81na)            |  1073 | 24 types of conditional relations, causality is the basis for existence                            |
+| dn       | [Dīgha Nikāya](https://en.wikipedia.org/wiki/D%C4%ABgha_Nik%C4%81ya)        |   312 | "Collection of Long Discourses" - 34 suttras                                                       |
+| mn       | [Majjhima Nikāya](https://en.wikipedia.org/wiki/Majjhima_Nik%C4%81ya)     |   573 | "Collection of Middle-length Discourses" - 152 or 222 suttras                                      |
+| sn       | [Saṃyutta Nikāya](https://en.wikipedia.org/wiki/Sa%E1%B9%83yutta_Nik%C4%81ya)     |   620 | "Connected Discourses" or "Kindred Sayings" - 2854 to 7762 suttras                                 |
+| an       | [Aṅguttara Nikāya](https://en.wikipedia.org/wiki/A%E1%B9%85guttara_Nik%C4%81ya)    |   709 | lit. 'Increased-by-One Collection', also translated "Gradual Collection" or "Numerical Discourses" |
+| kn       | [Khuddaka Nikāya](https://en.wikipedia.org/wiki/Khuddaka_Nik%C4%81ya)     |  1658 | lit. 'Minor Collection' - 15 to 18 books, incl. [Dhammapada](https://en.wikipedia.org/wiki/Dhammapada) and [Buddhavamsa](https://en.wikipedia.org/wiki/Buddhava%E1%B9%83sa) (also known as the Chronicle of Buddhas) |
 
 # More details in comparison
 
