@@ -153,9 +153,37 @@ More details on the three baskets of the Tipitaka:
   - [Yamaka](https://en.wikipedia.org/wiki/Yamaka)
   - [Paṭṭhāna](https://en.wikipedia.org/wiki/Pa%E1%B9%AD%E1%B9%ADh%C4%81na) (paṭṭhāna) - 24 types of conditional relations (the Buddhist belief that causality — not a Creator deity — is the basis of existence) on some 1000 pages
 
+## Size of the 3 baskets and their main 16 Collections
+
+I use the Pali text to estimate the pages needed to print the complete text 80x50 characters per page (Consolas 11pt on A4 with 17/19mm border)
+
+| Basket | Vinaya Piṭaka (Basket of Discipline) | Sutta Pitaka - 5 Nikāyas | Abhidhamma Piṭaka (Basket of Higher Doctrine) |
+|--------|--------------------------------------|--------------------------|-----------------------------------------------|
+| Pages  | 1031                                 | 3872                     | 2106                                          |
+| Including | bu, bi, kd, pvr                   | dn, mn, sn, an, kn       | ds, vb, dt, pp, lv, ya, patthana              |
+
 ![Size of Tripitaka based on pages](docs/size_tripitaka.png)
 
 # More details in comparison
+
+| code     | name                    | pages | content                                                                                            |
+|----------|-------------------------|-------|----------------------------------------------------------------------------------------------------|
+| bu       | Bhikkhupātimokkha       |   309 | 225 verses in the Pāṭimokkha with 227 rules for monks (bhikkhus) in the                            |
+| bi       | Bhikkhunīpātimokkhapāḷi |   108 | 311 rules for nuns (bhikkhuṇīs)                                                                    |
+| kd       | Khandhaka               |   452 | 22 chapters on various topics                                                                      |
+| pvr      | Parivāra                |   162 | 19 chapters with analyses of rules from various points of view                                     |
+| ds       | Dhammasaṅgaṇī           |   124 | lit. 'Collection of Dhammas'                                                                       |
+| vb       | Vibhaṅga                |   200 | 18 chapters: aggregate, sense bases, elements, truth, faculties, dependent origination and more    |
+| dt       | Dhātukathā              |    40 | "Discourse on Elements" in the form of questions and answers, grouped into 14 chapters             |
+| pp       | Puggalapaññatti         |    35 | Classifications of persons, which are arranged numerically, from 1-fold to 10-fold.                |
+| kv       | Kathāvatthu             |   188 | "Points of Controversy", documents over 200 points of contention.                                  |
+| ya       | Yamaka                  |   446 | यमक; Pali for "pairs", text on applied logic and analysis                                          |
+| patthana | Paṭṭhāna                |  1073 | 24 types of conditional relations, causality is the basis for existence                            |
+| dn       | Dīgha Nikāya            |   312 | "Collection of Long Discourses" - 34 suttras                                                       |
+| mn       | Majjhima Nikāya         |   573 | "Collection of Middle-length Discourses" - 152 or 222 suttras                                      |
+| sn       | Saṃyutta Nikāya         |   620 | "Connected Discourses" or "Kindred Sayings" - 2854 to 7762 suttras                                 |
+| an       | Aṅguttara Nikāya        |   709 | lit. 'Increased-by-One Collection', also translated "Gradual Collection" or "Numerical Discourses" |
+| kn       | Khuddaka Nikāya         |  1658 | lit. 'Minor Collection' - 15 to 18 books                                                           |
 
 ## King-James-Bible
 
