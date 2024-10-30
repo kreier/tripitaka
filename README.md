@@ -153,6 +153,8 @@ More details on the three baskets of the Tipitaka:
   - [Yamaka](https://en.wikipedia.org/wiki/Yamaka)
   - [Paṭṭhāna](https://en.wikipedia.org/wiki/Pa%E1%B9%AD%E1%B9%ADh%C4%81na) (paṭṭhāna) - 24 types of conditional relations (the Buddhist belief that causality — not a Creator deity — is the basis of existence) on some 1000 pages
 
+![Size of Tripitaka based on pages](docs/size_tripitaka.png)
+
 # More details in comparison
 
 ## King-James-Bible
