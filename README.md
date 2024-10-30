@@ -1,6 +1,6 @@
 # Tripitaka
 
-Make the text of the Tripitaka searchable for phrases and statistics. And compare the results to the Bible.
+I want to get some statistics on the text of the Tripitaka and probably make it searchable for phrases. And compare the results to the Bible. Here the short result: The three baskets have 2782 books and 5273 chapters that could be printed on 7013 pages. The Bible has 66 books with 1189 chapters that in the kjv could be printed on 1062 pages. The Tripitaka is therefore roughly 6.6x as large.
 
 ## The Pali version by the [The Vipassana Research Institute (VRI)](https://www.vridhamma.org/Tipitaka-Project)
 
@@ -42,6 +42,8 @@ Combined thats 31.4 MByte and roughly 7x larger than the KJV project, for compar
 - 790,573 words
 - 3,223,201 characters
 - 1062 pages if printed 80x50 per page (Consolas 11pt on A4 with 17/19mm border - [4.3 MByte as text file](https://raw.githubusercontent.com/kreier/tripitaka/main/python/kjv.txt))
+
+And a little private remark: I always wanted to be able to say that I read the entire bible. How long would that take? Some [92 hours](https://github.com/kreier/kinhthanh/blob/main/data/size_audio_en.csv) on average in English. By 2020 I only had the audio files for [827 of the 1189 chapters](https://github.com/kreier/kinhthanh/blob/main/data/size_audio_en_2020.csv) (60 hours). In 2023 I had all files ready, and started listening on June 6th and was [finished 143 days later on October 6th, 2023](https://github.com/kreier/study/blob/main/markdown/progress.txt). Now let's follow up with German and Vietnamese.
 
 ## Tripitaka size in tablets at the Kuthodaw Pagoda
 
