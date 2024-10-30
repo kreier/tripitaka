@@ -8,9 +8,9 @@ I want to get some statistics on the text of the Tripitaka and probably make it 
 
 The structure of the Tripitaka is more diverse and not as uniform as in the bible. A parsing run over the 7288 json files from the [Pali edition](https://github.com/suttacentral/bilara-data) resulted in the following statistics:
 
-- 2,782 books
-- 5,273 chapters
-- 99,567 verses
+- 2,782 books - 42x
+- 5,273 chapters - 4.4x
+- 99,567 verses - 3.2x
 - 481,994	sentences - 13.8x kjv
 - 3,007,818 words - 3.8x kjv
 - 22,439,824 characters or letters - 6.9x kjv
