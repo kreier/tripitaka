@@ -262,6 +262,7 @@ We can now break down each book into the number of chapteres, verses, sentences,
 | 3 John          |        1 |     14 |        18 |    294 |   1,250 |     0 |
 | Jude            |        1 |     25 |        27 |    609 |   2,812 |     1 |
 | Revelation      |       22 |    404 |       460 | 12,003 |  48,251 |    16 |
+| sum             |     1189 | 31,102 |  35,049 | 790,573 | 3,223,201 | 1061 |
 
 ## Pali edition of the Tripitaka
 
