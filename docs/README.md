@@ -1,5 +1,9 @@
 # Tripitaka
 
+[![GitHub release](https://img.shields.io/github/release/kreier/tripitaka.svg)](https://GitHub.com/kreier/tripitaka/releases/)
+[![MIT license](https://img.shields.io/github/license/kreier/tripitaka)](https://kreier.mit-license.org/)
+[![pages-build-deployment](https://github.com/kreier/tripitaka/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/kreier/tripitaka/actions/workflows/pages/pages-build-deployment)
+
 I want to get some statistics on the text of the Tripitaka and probably make it searchable for phrases. Then compare the results to the Bible. Here the short result: The three baskets have 2782 books and 5273 chapters that could be printed on 7013 pages. The Bible has 66 books with 1189 chapters that in the kjv could be printed on 1062 pages. The Tripitaka is therefore roughly 6.6x as large.
 
 ## The Pali version by the [The Vipassana Research Institute (VRI)](https://www.vridhamma.org/Tipitaka-Project)
@@ -13,7 +17,7 @@ The structure of the Tripitaka is more diverse and not as uniform as in the bibl
 - 99,567 verses - 3.2x
 - 481,994	sentences - 13.8x kjv
 - 3,007,818 words - 3.8x kjv
-- 22,439,824 characters or letters - 6.9x kjv
+- 22,439,824 characters or letters - 6.9x [kjv](https://raw.githubusercontent.com/kreier/tripitaka/refs/heads/main/python/kjv.txt)
 - 7,013 pages if printed 80x50 per page (Consolas 11pt on A4 with 17/19mm border - 31.4 MByte as text file, 6.6x kjv)
 
 In detail for the three Baskets this results in :
