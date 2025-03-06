@@ -1,0 +1,17 @@
+Info for the nwt_xml subfolder
+
+The XML files in this file were extracted from the DAISY files downloaded for each of the 66 bible books from https://www.jw.org/en/library/bible/nwt/books/ . The ZIP files contain the mp3 audio files, that are not used here.
+
+Size comparison:
+
+Genesis                    121 MB  324 kB
+Exodus                      96 MB  
+Leviticus
+Numbers
+Deuteronomy                 81 MB
+
+Job                         63 MB
+Psalms                     167 MB
+Proverbs                    59 MB
+Ecclesiastes                19 MB
+Song of Solomon (Canticles) 10 MB  

@@ -1,5 +1,5 @@
 {
-    "book": "Genesis",
+    "book": "Leviticus",
     "chapters": [
         {
             "chapter": "0001",
@@ -107,98 +107,6 @@
         },
         {
             "chapter": "0027",
-            "verses": []
-        },
-        {
-            "chapter": "0028",
-            "verses": []
-        },
-        {
-            "chapter": "0029",
-            "verses": []
-        },
-        {
-            "chapter": "0030",
-            "verses": []
-        },
-        {
-            "chapter": "0031",
-            "verses": []
-        },
-        {
-            "chapter": "0032",
-            "verses": []
-        },
-        {
-            "chapter": "0033",
-            "verses": []
-        },
-        {
-            "chapter": "0034",
-            "verses": []
-        },
-        {
-            "chapter": "0035",
-            "verses": []
-        },
-        {
-            "chapter": "0036",
-            "verses": []
-        },
-        {
-            "chapter": "0037",
-            "verses": []
-        },
-        {
-            "chapter": "0038",
-            "verses": []
-        },
-        {
-            "chapter": "0039",
-            "verses": []
-        },
-        {
-            "chapter": "0040",
-            "verses": []
-        },
-        {
-            "chapter": "0041",
-            "verses": []
-        },
-        {
-            "chapter": "0042",
-            "verses": []
-        },
-        {
-            "chapter": "0043",
-            "verses": []
-        },
-        {
-            "chapter": "0044",
-            "verses": []
-        },
-        {
-            "chapter": "0045",
-            "verses": []
-        },
-        {
-            "chapter": "0046",
-            "verses": []
-        },
-        {
-            "chapter": "0047",
-            "verses": []
-        },
-        {
-            "chapter": "0048",
-            "verses": []
-        },
-        {
-            "chapter": "0049",
-            "verses": []
-        },
-        {
-            "chapter": "0050",
             "verses": []
         }
     ]
