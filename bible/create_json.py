@@ -28,7 +28,7 @@ namespace = { 'dtb': 'http://www.daisy.org/z3986/2005/dtbook/' }
 
 for folder, files in result.items():
     book = folder.replace("\\","/").split("/")[-1]
-    print(f"Processing {book} ", end="")
+    print(f"Processing: {book} ", end="")
 
     # Initialize the JSON structure
     book_json = {}
@@ -59,7 +59,11 @@ for folder, files in result.items():
                 verse_number = verse_text[:len_verse_number]
                 verse_text = verse_text[len_verse_number+2:]
             else:
-                verse_number = "1"   
+                verse_number = "1"
+            
+            if "\u201D" in verse_text:               # Replace right double quotation mark with left double quotation mark - JSON error, \u201C is allowed somehow
+                verse_text = verse_text.replace("\u201D", '“')
+                # print(f"Replaced \u201D in {book} {chapter_json['chapter']}:{verse_number}")
             
             # Initialize the verse JSON structure
             verse_json = {}
@@ -75,10 +79,11 @@ for folder, files in result.items():
         number_chapters += 1
         
     # Export the JSON structure to a file
-    book_string = json.dumps(book_json, ensure_ascii=False, indent=4)
+    # book_string = json.dumps(book_json, ensure_ascii=False, indent=4)
     output_file_path = os.path.join(export_dictionary, f"{book}.json")
     with open(output_file_path, "w", encoding="utf-8") as file:
-        file.write(book_string)
+        # file.write(book_string)
+        json.dump(book_json, file, ensure_ascii=False, indent=4,separators=(',', ':'))
     print(f"with {number_chapters} chapters and {number_verses} verses")
 
-print(f"Parsed {len(result)} folders/books with {sum([len(files) for files in result.values()])} XML files/chapters.")
+print(f"Parsed {len(result)} folders/books with a total of {sum([len(files) for files in result.values()])} XML files/chapters.")
