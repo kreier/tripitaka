@@ -84,6 +84,7 @@ def parse_list():
     # output += "\n"*25
     # output += "                      Project 'examine large textbodies'\n"
     # add_pagebreak()
+    n_c, n_v, n_s, n_w, n_l, n_p = 0, 0, 0, 0, 0, 0
     for book in booklist:
         f = open(book)
         book = json.load(f)
@@ -107,6 +108,9 @@ def parse_list():
                             number_words += 1
                             number_letters += len(word)
                             # print(word, end="_")
+        # print some information about each book
+        print(f"Book: {book_name} with {number_chapters - n_c} chapters and {number_verses - n_v} verses. Sentences: {number_sentences - n_s}, Words: {number_words - n_w}, Letters: {number_letters - n_l}. Pages: {number_pages - n_p}")
+        n_c, n_v, n_s, n_w, n_l, n_p = number_chapters, number_verses, number_sentences, number_words, number_letters, number_pages
         f.close()
         output += "\n\n\n"
         current_column = 0
