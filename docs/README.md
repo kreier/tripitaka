@@ -4,7 +4,7 @@
 [![MIT license](https://img.shields.io/github/license/kreier/tripitaka)](https://kreier.mit-license.org/)
 [![pages-build-deployment](https://github.com/kreier/tripitaka/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/kreier/tripitaka/actions/workflows/pages/pages-build-deployment)
 
-I want to get some statistics on the text of the Tripitaka and probably make it searchable for phrases. Then compare the results to the Bible. Here the short result: The three baskets have 2782 books and 5273 chapters that could be printed on 7013 pages. The Bible has 66 books with 1189 chapters that in the kjv could be printed on 1062 pages. The Tripitaka is therefore roughly 6.6x as large.
+I want to get some statistics on the text of the Tripitaka and probably make it searchable for phrases. Then compare the results to the Bible. Here the short result: The three baskets have 2782 books and **5273 chapters** that could be printed on **7013 pages**. The Bible has 66 books with **1189 chapters** that in the kjv could be printed on **1062 pages**. The Tripitaka is therefore roughly **6.6x** as large.
 
 ## The Pali version by the [The Vipassana Research Institute (VRI)](https://www.vridhamma.org/Tipitaka-Project)
 
@@ -159,7 +159,7 @@ More details on the three baskets of the Tipitaka:
 
 ## Size of the 3 baskets and their main 16 Collections
 
-I used the Pali text to estimate the pages needed to print the complete text 80x50 characters per page (Consolas 11pt on A4 with 17/19mm border).
+I use the Pali text to estimate the pages needed to print the complete text 80x50 characters per page (Consolas 11pt on A4 with 17/19mm border) on **7009 pages**, in detail:
 
 | Basket    | [Vinaya Piṭaka](https://en.wikipedia.org/wiki/Vinaya_Pi%E1%B9%ADaka)          | [Sutta Pitaka](https://en.wikipedia.org/wiki/Sutta_Pi%E1%B9%ADaka) - 5 Nikāyas | [Abhidhamma Piṭaka](https://en.wikipedia.org/wiki/Abhidhamma_Pi%E1%B9%ADaka)                |
 |-----------|------------------------|--------------------------|----------------------------------|
@@ -187,6 +187,7 @@ I used the Pali text to estimate the pages needed to print the complete text 80x
 | sn       | [Saṃyutta Nikāya](https://en.wikipedia.org/wiki/Sa%E1%B9%83yutta_Nik%C4%81ya)     |   620 | "Connected Discourses" or "Kindred Sayings" - 2854 to 7762 suttras                                 |
 | an       | [Aṅguttara Nikāya](https://en.wikipedia.org/wiki/A%E1%B9%85guttara_Nik%C4%81ya)    |   709 | lit. 'Increased-by-One Collection', also translated "Gradual Collection" or "Numerical Discourses" |
 | kn       | [Khuddaka Nikāya](https://en.wikipedia.org/wiki/Khuddaka_Nik%C4%81ya)     |  1658 | lit. 'Minor Collection' - 15 to 18 books, incl. [Dhammapada](https://en.wikipedia.org/wiki/Dhammapada) and [Buddhavamsa](https://en.wikipedia.org/wiki/Buddhava%E1%B9%83sa) (also known as the Chronicle of Buddhas) |
+| sum      | number of pages:              | 7009 |  with text 80x50 characters per A4 page (Consolas 11pt, 17/19mm border) |
 
 # More details in comparison
 
@@ -266,7 +267,7 @@ We can now break down each book into the number of chapteres, verses, sentences,
 | 3 John          |        1 |     14 |        18 |    294 |   1,250 |     0 |
 | Jude            |        1 |     25 |        27 |    609 |   2,812 |     1 |
 | Revelation      |       22 |    404 |       460 | 12,003 |  48,251 |    16 |
-| sum             |     1189 | 31,102 |  35,049 | 790,573 | 3,223,201 | 1061 |
+| sum             |    1,189 | 31,102 |    35,049 | 790,573 | 3,223,201 | 1061 |
 
 ## Pali edition of the Tripitaka
 
