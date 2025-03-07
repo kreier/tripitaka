@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/css" href="dtbook.2005.basic.css"?>
+<!DOCTYPE dtbook PUBLIC "-//NISO//DTD dtbook 2005-3//EN" "http://www.daisy.org/z3986/2005/dtbook-2005-3.dtd">
+<dtbook xmlns="http://www.daisy.org/z3986/2005/dtbook/" version="2005-2" xml:lang="en">
+    <head>
+        <meta name="dt:version" content="1.0" />
+        <meta name="dc:Title" content="Psalms"/>
+        <meta name="dc:Creator" content="Watchtower"/>
+        <meta name="dc:Publisher" content="Watch Tower Bible and Tract Society of Pennsylvania"/>
+        <meta name="dc:Date" content="None"/>
+        <meta name="dc:Language" content="en" />
+        <meta name="dc:identifier" content="" />
+        <meta name="dtb:uid" content=""/>
+        <meta name="generator" content="Anemone 1.70 (http://ssb22.user.srcf.net/anemone)"/>
+    </head>
+    <book>
+        <frontmatter><doctitle>Psalms</doctitle><docauthor>Watchtower</docauthor></frontmatter><bodymatter>
+<level1><h1 id="p1021">Psalm 67 To the director; to be accompanied with stringed instruments. A melody. A song.</h1>
+<p><span id="p1022" class="sentence">God will show us favor and bless us;He will make his face shine upon us (Selah)</span>
+<span id="p1023" class="sentence">2  So that your way may be known throughout the earth,Your acts of salvation among all the nations.</span>
+<span id="p1024" class="sentence">3  Let peoples praise you, O God;Let all the peoples praise you.</span>
+<span id="p1025" class="sentence">4  Let nations rejoice and shout joyfully,For you will judge the peoples fairly.
+You will guide the nations of the earth. (Selah)</span>
+<span id="p1026" class="sentence">5  Let peoples praise you, O God;Let all the peoples praise you.</span>
+<span id="p1027" class="sentence">6  The earth will give its produce;God, our God, will bless us.</span>
+<span id="p1028" class="sentence">7  God will bless us,And all the ends of the earth will fear him.</span></p></level1>
+    </bodymatter></book>
+</dtbook>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/css" href="dtbook.2005.basic.css"?>
+<!DOCTYPE dtbook PUBLIC "-//NISO//DTD dtbook 2005-3//EN" "http://www.daisy.org/z3986/2005/dtbook-2005-3.dtd">
+<dtbook xmlns="http://www.daisy.org/z3986/2005/dtbook/" version="2005-2" xml:lang="en">
+    <head>
+        <meta name="dt:version" content="1.0" />
+        <meta name="dc:Title" content="Psalms"/>
+        <meta name="dc:Creator" content="Watchtower"/>
+        <meta name="dc:Publisher" content="Watch Tower Bible and Tract Society of Pennsylvania"/>
+        <meta name="dc:Date" content="None"/>
+        <meta name="dc:Language" content="en" />
+        <meta name="dc:identifier" content="" />
+        <meta name="dtb:uid" content=""/>
+        <meta name="generator" content="Anemone 1.70 (http://ssb22.user.srcf.net/anemone)"/>
+    </head>
+    <book>
+        <frontmatter><doctitle>Psalms</doctitle><docauthor>Watchtower</docauthor></frontmatter><bodymatter>
+<level1><h1 id="p319">Psalm 23 A melody of David.</h1>
+<p><span id="p320" class="sentence">Jehovah is my Shepherd.
+I will lack nothing.</span>
+<span id="p321" class="sentence">2  In grassy pastures he makes me lie down;He leads me to well-watered resting-places.</span>
+<span id="p322" class="sentence">3  He refreshes me.
+He leads me in the paths of righteousness for the sake of his name.</span>
+<span id="p323" class="sentence">4  Though I walk in the valley of deep shadow,I fear no harm,For you are with me;Your rod and your staff reassure me.</span>
+<span id="p324" class="sentence">5  You prepare a table for me before my enemies.
+You refresh my head with oil;My cup is well-filled.</span>
+<span id="p325" class="sentence">6  Surely goodness and loyal love will pursue me all the days of my life,And I will dwell in the house of Jehovah for all my days.</span></p></level1>
+    </bodymatter></book>
+</dtbook>

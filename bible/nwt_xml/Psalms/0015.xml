@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/css" href="dtbook.2005.basic.css"?>
+<!DOCTYPE dtbook PUBLIC "-//NISO//DTD dtbook 2005-3//EN" "http://www.daisy.org/z3986/2005/dtbook-2005-3.dtd">
+<dtbook xmlns="http://www.daisy.org/z3986/2005/dtbook/" version="2005-2" xml:lang="en">
+    <head>
+        <meta name="dt:version" content="1.0" />
+        <meta name="dc:Title" content="Psalms"/>
+        <meta name="dc:Creator" content="Watchtower"/>
+        <meta name="dc:Publisher" content="Watch Tower Bible and Tract Society of Pennsylvania"/>
+        <meta name="dc:Date" content="None"/>
+        <meta name="dc:Language" content="en" />
+        <meta name="dc:identifier" content="" />
+        <meta name="dtb:uid" content=""/>
+        <meta name="generator" content="Anemone 1.70 (http://ssb22.user.srcf.net/anemone)"/>
+    </head>
+    <book>
+        <frontmatter><doctitle>Psalms</doctitle><docauthor>Watchtower</docauthor></frontmatter><bodymatter>
+<level1><h1 id="p163">Psalm 15 A melody of David.</h1>
+<p><span id="p164" class="sentence">O Jehovah, who may be a guest in your tent?
+Who may reside in your holy mountain?</span>
+<span id="p165" class="sentence">2  The one who is walking faultlessly,Practicing what is rightAnd speaking the truth in his heart.</span>
+<span id="p166" class="sentence">3  He does not slander with his tongue,He does nothing bad to his neighbor,And he does not defame his friends.</span>
+<span id="p167" class="sentence">4  He rejects anyone who is contemptible,But he honors those fearing Jehovah.
+He does not go back on his promise, even when it is bad for him.</span>
+<span id="p168" class="sentence">5  He does not lend his money on interest,And he does not accept a bribe against the innocent.
+Whoever does these things will never be shaken.</span></p></level1>
+    </bodymatter></book>
+</dtbook>

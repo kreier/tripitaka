@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/css" href="dtbook.2005.basic.css"?>
+<!DOCTYPE dtbook PUBLIC "-//NISO//DTD dtbook 2005-3//EN" "http://www.daisy.org/z3986/2005/dtbook-2005-3.dtd">
+<dtbook xmlns="http://www.daisy.org/z3986/2005/dtbook/" version="2005-2" xml:lang="en">
+    <head>
+        <meta name="dt:version" content="1.0" />
+        <meta name="dc:Title" content="Psalms"/>
+        <meta name="dc:Creator" content="Watchtower"/>
+        <meta name="dc:Publisher" content="Watch Tower Bible and Tract Society of Pennsylvania"/>
+        <meta name="dc:Date" content="None"/>
+        <meta name="dc:Language" content="en" />
+        <meta name="dc:identifier" content="" />
+        <meta name="dtb:uid" content=""/>
+        <meta name="generator" content="Anemone 1.70 (http://ssb22.user.srcf.net/anemone)"/>
+    </head>
+    <book>
+        <frontmatter><doctitle>Psalms</doctitle><docauthor>Watchtower</docauthor></frontmatter><bodymatter>
+<level1><h1 id="p1669">Psalm 100 A melody of thanksgiving.</h1>
+<p><span id="p1670" class="sentence">Shout in triumph to Jehovah, all the earth.</span>
+<span id="p1671" class="sentence">2  Serve Jehovah with rejoicing.
+Come into his presence with joyful shouting.</span>
+<span id="p1672" class="sentence">3  Know that Jehovah is God.
+He is the one who made us, and we belong to him.
+We are his people and the sheep of his pasture.</span>
+<span id="p1673" class="sentence">4  Come into his gates with thanksgiving,Into his courtyards with praise.
+Give thanks to him; praise his name.</span>
+<span id="p1674" class="sentence">5  For Jehovah is good;His loyal love endures forever,And his faithfulness through all generations.</span></p></level1>
+    </bodymatter></book>
+</dtbook>

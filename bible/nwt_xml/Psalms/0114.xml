@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/css" href="dtbook.2005.basic.css"?>
+<!DOCTYPE dtbook PUBLIC "-//NISO//DTD dtbook 2005-3//EN" "http://www.daisy.org/z3986/2005/dtbook-2005-3.dtd">
+<dtbook xmlns="http://www.daisy.org/z3986/2005/dtbook/" version="2005-2" xml:lang="en">
+    <head>
+        <meta name="dt:version" content="1.0" />
+        <meta name="dc:Title" content="Psalms"/>
+        <meta name="dc:Creator" content="Watchtower"/>
+        <meta name="dc:Publisher" content="Watch Tower Bible and Tract Society of Pennsylvania"/>
+        <meta name="dc:Date" content="None"/>
+        <meta name="dc:Language" content="en" />
+        <meta name="dc:identifier" content="" />
+        <meta name="dtb:uid" content=""/>
+        <meta name="generator" content="Anemone 1.70 (http://ssb22.user.srcf.net/anemone)"/>
+    </head>
+    <book>
+        <frontmatter><doctitle>Psalms</doctitle><docauthor>Watchtower</docauthor></frontmatter><bodymatter>
+<level1><h1 id="p1997">Psalm 114</h1>
+<p><span id="p1998" class="sentence">When Israel went out of Egypt,The house of Jacob from a people speaking a foreign language,</span>
+<span id="p1999" class="sentence">2  Judah became his sanctuary,Israel, his dominion.</span>
+<span id="p2000" class="sentence">3  The sea saw it and fled;The Jordan turned back.</span>
+<span id="p2001" class="sentence">4  The mountains skipped about like rams,The hills, like lambs.</span>
+<span id="p2002" class="sentence">5  What made you flee, O sea?
+Why, O Jordan, did you turn back?</span>
+<span id="p2003" class="sentence">6  Why did you skip about like rams, O mountains,Like lambs, O hills?</span>
+<span id="p2004" class="sentence">7  Tremble, O earth, because of the Lord,Because of the God of Jacob,</span>
+<span id="p2005" class="sentence">8  Who turns the rock into a reedy pool of water,The flinty rock into springs of water.</span></p></level1>
+    </bodymatter></book>
+</dtbook>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/css" href="dtbook.2005.basic.css"?>
+<!DOCTYPE dtbook PUBLIC "-//NISO//DTD dtbook 2005-3//EN" "http://www.daisy.org/z3986/2005/dtbook-2005-3.dtd">
+<dtbook xmlns="http://www.daisy.org/z3986/2005/dtbook/" version="2005-2" xml:lang="en">
+    <head>
+        <meta name="dt:version" content="1.0" />
+        <meta name="dc:Title" content="Psalms"/>
+        <meta name="dc:Creator" content="Watchtower"/>
+        <meta name="dc:Publisher" content="Watch Tower Bible and Tract Society of Pennsylvania"/>
+        <meta name="dc:Date" content="None"/>
+        <meta name="dc:Language" content="en" />
+        <meta name="dc:identifier" content="" />
+        <meta name="dtb:uid" content=""/>
+        <meta name="generator" content="Anemone 1.70 (http://ssb22.user.srcf.net/anemone)"/>
+    </head>
+    <book>
+        <frontmatter><doctitle>Psalms</doctitle><docauthor>Watchtower</docauthor></frontmatter><bodymatter>
+<level1><h1 id="p2340">Psalm 131 A Song of the Ascents. Of David.</h1>
+<p><span id="p2341" class="sentence">O Jehovah, my heart is not haughty,Nor are my eyes lofty;Nor do I aspire to things too great,Or to things that are beyond me.</span>
+<span id="p2342" class="sentence">2  No, but I have calmed and quieted my soulLike a weaned child with its mother;I am contented like a weaned child.</span>
+<span id="p2343" class="sentence">3  Let Israel wait for JehovahFrom now on and forever.</span></p></level1>
+    </bodymatter></book>
+</dtbook>

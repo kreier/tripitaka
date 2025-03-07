@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/css" href="dtbook.2005.basic.css"?>
+<!DOCTYPE dtbook PUBLIC "-//NISO//DTD dtbook 2005-3//EN" "http://www.daisy.org/z3986/2005/dtbook-2005-3.dtd">
+<dtbook xmlns="http://www.daisy.org/z3986/2005/dtbook/" version="2005-2" xml:lang="en">
+    <head>
+        <meta name="dt:version" content="1.0" />
+        <meta name="dc:Title" content="Psalms"/>
+        <meta name="dc:Creator" content="Watchtower"/>
+        <meta name="dc:Publisher" content="Watch Tower Bible and Tract Society of Pennsylvania"/>
+        <meta name="dc:Date" content="None"/>
+        <meta name="dc:Language" content="en" />
+        <meta name="dc:identifier" content="" />
+        <meta name="dtb:uid" content=""/>
+        <meta name="generator" content="Anemone 1.70 (http://ssb22.user.srcf.net/anemone)"/>
+    </head>
+    <book>
+        <frontmatter><doctitle>Psalms</doctitle><docauthor>Watchtower</docauthor></frontmatter><bodymatter>
+<level1><h1 id="p2605">Psalm 150</h1>
+<p><span id="p2606" class="sentence">Praise Jah!
+Praise God in his holy place.
+Praise him in the expanse of his strength.</span>
+<span id="p2607" class="sentence">2  Praise him for his mighty works.
+Praise him for his exceeding greatness.</span>
+<span id="p2608" class="sentence">3  Praise him with the sounding of the horn.
+Praise him with the stringed instrument and the harp.</span>
+<span id="p2609" class="sentence">4  Praise him with the tambourine and the circle dance.
+Praise him with strings and the flute.</span>
+<span id="p2610" class="sentence">5  Praise him with ringing cymbals.
+Praise him with crashing cymbals.</span>
+<span id="p2611" class="sentence">6  Every breathing thing—let it praise Jah.
+Praise Jah!</span></p></level1>
+    </bodymatter></book>
+</dtbook>
