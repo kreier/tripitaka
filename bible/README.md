@@ -1,6 +1,8 @@
 # Translations of the bible
 
-Currently this folder only holds a copy of the King James Version. It was intended as a proof of concept to rapidly generate data about the size of the 66 books, how many words are in there - to use this algorithm to compare it with the tripitaka.
+This folder started in 2024 with a copy of the King James Version as JSON file. It was intended as a proof of concept to rapidly generate data about the size of the 66 books, how many words are in there - to use this algorithm to compare it with the tripitaka.
+
+## King James Version
 
 We counted more than 3 million characters for the 790,573 words, used in 31,102 verses that are grouped in 1189 chapters. 66 books. In detail:
 
@@ -73,3 +75,9 @@ We counted more than 3 million characters for the 790,573 words, used in 31,102 
 | Jude            |        1 |     25 |        27 |    609 |   2,812 |     1 |
 | Revelation      |       22 |    404 |       460 | 12,003 |  48,251 |    16 |
 | sum             |     1189 | 31,102 |  35,049 | 790,573 | 3,223,201 | 1061 |
+
+## New World Translation
+
+The source for the text is the XML file, embedded in the DAISY files for screenreaders. The conversion to JSON is not ideal, since some characters (some hebrew like Aleph \u05D0 or Vaw \u05D5 in Pslams 111, or the left double quotation mark \u201D) cause errors from the json import module, while it was exported with `json.dump()` to avoid this very problem. Here are the preliminary results:
+
+It is 

@@ -1,0 +1,450 @@
+{
+    "book":"1_John",
+    "chapters":[
+        {
+            "chapter":"1",
+            "verses":[
+                {
+                    "verse":"1",
+                    "text":"That which was from the beginning, which we have heard, which we have seen with our eyes, which we have observed and our hands have felt, concerning the word of life,"
+                },
+                {
+                    "verse":"2",
+                    "text":"(yes, the life was made manifest, and we have seen and are bearing witness and reporting to you the everlasting life that was with the Father and was made manifest to us),"
+                },
+                {
+                    "verse":"3",
+                    "text":"that which we have seen and heard we are reporting also to you, so that you too may have fellowship with us. And this fellowship of ours is with the Father and with his Son Jesus Christ."
+                },
+                {
+                    "verse":"4",
+                    "text":"And we are writing these things so that our joy may be complete."
+                },
+                {
+                    "verse":"5",
+                    "text":"This is the message that we heard from him and are announcing to you: God is light, and there is no darkness at all in him."
+                },
+                {
+                    "verse":"6",
+                    "text":"If we make the statement, “We are having fellowship with him,“ and yet we go on walking in the darkness, we are lying and are not practicing the truth."
+                },
+                {
+                    "verse":"7",
+                    "text":"However, if we are walking in the light as he himself is in the light, we do have fellowship with one another, and the blood of Jesus his Son cleanses us from all sin."
+                },
+                {
+                    "verse":"8",
+                    "text":"If we make the statement, “We have no sin,“ we are misleading ourselves and the truth is not in us."
+                },
+                {
+                    "verse":"9",
+                    "text":"If we confess our sins, he is faithful and righteous so as to forgive us our sins and to cleanse us from all unrighteousness."
+                },
+                {
+                    "verse":"10",
+                    "text":"If we make the statement, “We have not sinned,“ we are making him a liar, and his word is not in us."
+                }
+            ]
+        },
+        {
+            "chapter":"2",
+            "verses":[
+                {
+                    "verse":"1",
+                    "text":"My little children, I am writing you these things so that you may not commit a sin. And yet, if anyone does commit a sin, we have a helper with the Father, Jesus Christ, a righteous one."
+                },
+                {
+                    "verse":"2",
+                    "text":"And he is a propitiatory sacrifice for our sins, yet not for ours only but also for the whole world’s."
+                },
+                {
+                    "verse":"3",
+                    "text":"And by this we realize that we have come to know him, namely, if we continue observing his commandments."
+                },
+                {
+                    "verse":"4",
+                    "text":"The one who says, “I have come to know him,“ and yet does not observe his commandments is a liar, and the truth is not in this person."
+                },
+                {
+                    "verse":"5",
+                    "text":"But whoever does observe his word, in this person the love of God has truly been made perfect. By this we know that we are in union with him."
+                },
+                {
+                    "verse":"6",
+                    "text":"The one who says he remains in union with him is himself under obligation to go on walking just as that one walked."
+                },
+                {
+                    "verse":"7",
+                    "text":"Beloved ones, I am writing you, not a new commandment, but an old commandment that you have had from the beginning. This old commandment is the word that you heard."
+                },
+                {
+                    "verse":"8",
+                    "text":"Again, I am writing you a new commandment, which is true in his case and in yours, because the darkness is passing away and the true light is already shining."
+                },
+                {
+                    "verse":"9",
+                    "text":"The one who says that he is in the light and yet hates his brother is still in the darkness."
+                },
+                {
+                    "verse":"10",
+                    "text":"The one who loves his brother remains in the light, and in him there is no cause for stumbling."
+                },
+                {
+                    "verse":"11",
+                    "text":"But the one who hates his brother is in the darkness and is walking in the darkness, and he does not know where he is going, because the darkness has blinded his eyes."
+                },
+                {
+                    "verse":"12",
+                    "text":"I am writing you, little children, because your sins have been forgiven you for the sake of his name."
+                },
+                {
+                    "verse":"13",
+                    "text":"I am writing you, fathers, because you have come to know him who is from the beginning. I am writing you, young men, because you have conquered the wicked one. I write you, young children, because you have come to know the Father."
+                },
+                {
+                    "verse":"14",
+                    "text":"I write you, fathers, because you have come to know him who is from the beginning. I write you, young men, because you are strong and the word of God remains in you and you have conquered the wicked one."
+                },
+                {
+                    "verse":"15",
+                    "text":"Do not love either the world or the things in the world. If anyone loves the world, the love of the Father is not in him;"
+                },
+                {
+                    "verse":"16",
+                    "text":"because everything in the world—the desire of the flesh and the desire of the eyes and the showy display of one’s means of life—does not originate with the Father, but originates with the world."
+                },
+                {
+                    "verse":"17",
+                    "text":"Furthermore, the world is passing away and so is its desire, but the one who does the will of God remains forever."
+                },
+                {
+                    "verse":"18",
+                    "text":"Young children, it is the last hour, and just as you have heard that the antichrist is coming, even now many antichrists have appeared, from which fact we know that it is the last hour."
+                },
+                {
+                    "verse":"19",
+                    "text":"They went out from us, but they were not of our sort; for if they had been of our sort, they would have remained with us. But they went out so that it might be shown that not all are of our sort."
+                },
+                {
+                    "verse":"20",
+                    "text":"And you have an anointing from the holy one, and all of you have knowledge."
+                },
+                {
+                    "verse":"21",
+                    "text":"I write you, not because you do not know the truth, but because you know it, and because no lie originates with the truth."
+                },
+                {
+                    "verse":"22",
+                    "text":"Who is the liar but the one who denies that Jesus is the Christ? This is the antichrist, the one who denies the Father and the Son."
+                },
+                {
+                    "verse":"23",
+                    "text":"Everyone who denies the Son does not have the Father either. But whoever acknowledges the Son has the Father also."
+                },
+                {
+                    "verse":"24",
+                    "text":"As for you, what you have heard from the beginning must remain in you. If what you have heard from the beginning remains in you, you will also remain in union with the Son and in union with the Father."
+                },
+                {
+                    "verse":"25",
+                    "text":"Furthermore, this is what he himself promised us—the life everlasting."
+                },
+                {
+                    "verse":"26",
+                    "text":"I write you these things about those who are trying to mislead you."
+                },
+                {
+                    "verse":"27",
+                    "text":"And as for you, the anointing that you received from him remains in you, and you do not need anyone to be teaching you; but the anointing from him is teaching you about all things and is true and is no lie. Just as it has taught you, remain in union with him."
+                },
+                {
+                    "verse":"28",
+                    "text":"So now, little children, remain in union with him, so that when he is made manifest we may have freeness of speech and not shrink away from him in shame at his presence."
+                },
+                {
+                    "verse":"29",
+                    "text":"If you know that he is righteous, you also know that everyone who practices righteousness has been born from him."
+                }
+            ]
+        },
+        {
+            "chapter":"3",
+            "verses":[
+                {
+                    "verse":"1",
+                    "text":"See what sort of love the Father has given us, that we should be called children of God! And that is what we are. That is why the world does not know us, because it has not come to know him."
+                },
+                {
+                    "verse":"2",
+                    "text":"Beloved ones, we are now children of God, but it has not yet been made manifest what we will be. We do know that when he is made manifest we will be like him, because we will see him just as he is."
+                },
+                {
+                    "verse":"3",
+                    "text":"And everyone who has this hope in him purifies himself, just as that one is pure."
+                },
+                {
+                    "verse":"4",
+                    "text":"Everyone who practices sin is also practicing lawlessness, and sin is lawlessness."
+                },
+                {
+                    "verse":"5",
+                    "text":"You know, too, that he was made manifest to take away our sins, and there is no sin in him."
+                },
+                {
+                    "verse":"6",
+                    "text":"Everyone remaining in union with him does not practice sin; no one who practices sin has either seen him or come to know him."
+                },
+                {
+                    "verse":"7",
+                    "text":"Little children, let no one mislead you; the one who practices righteousness is righteous, just as that one is righteous."
+                },
+                {
+                    "verse":"8",
+                    "text":"The one who practices sin originates with the Devil, because the Devil has been sinning from the beginning. For this purpose the Son of God was made manifest, to break up the works of the Devil."
+                },
+                {
+                    "verse":"9",
+                    "text":"Everyone who has been born from God does not practice sin, for His seed remains in such one, and he cannot practice sin, for he has been born from God."
+                },
+                {
+                    "verse":"10",
+                    "text":"The children of God and the children of the Devil are evident by this fact: Whoever does not practice righteousness does not originate with God, nor does the one who does not love his brother."
+                },
+                {
+                    "verse":"11",
+                    "text":"For this is the message that you have heard from the beginning, that we should love one another;"
+                },
+                {
+                    "verse":"12",
+                    "text":"not like Cain, who originated with the wicked one and slaughtered his brother. And for what reason did he slaughter him? Because his own works were wicked, but those of his brother were righteous."
+                },
+                {
+                    "verse":"13",
+                    "text":"Do not be surprised, brothers, that the world hates you."
+                },
+                {
+                    "verse":"14",
+                    "text":"We know that we have passed over from death to life, because we love the brothers. The one who does not love remains in death."
+                },
+                {
+                    "verse":"15",
+                    "text":"Everyone who hates his brother is a murderer, and you know that no murderer has everlasting life remaining in him."
+                },
+                {
+                    "verse":"16",
+                    "text":"By this we have come to know love, because that one surrendered his life for us, and we are under obligation to surrender our lives for our brothers."
+                },
+                {
+                    "verse":"17",
+                    "text":"But whoever has the material possessions of this world and sees his brother in need and yet refuses to show him compassion, in what way does the love of God remain in him?"
+                },
+                {
+                    "verse":"18",
+                    "text":"Little children, we should love, not in word or with the tongue, but in deed and truth."
+                },
+                {
+                    "verse":"19",
+                    "text":"By this we will know that we originate with the truth, and we will assure our hearts before him"
+                },
+                {
+                    "verse":"20",
+                    "text":"regarding whatever our hearts may condemn us in, because God is greater than our hearts and knows all things."
+                },
+                {
+                    "verse":"21",
+                    "text":"Beloved ones, if our hearts do not condemn us, we have freeness of speech toward God;"
+                },
+                {
+                    "verse":"22",
+                    "text":"and whatever we ask we receive from him, because we are observing his commandments and doing what is pleasing in his eyes."
+                },
+                {
+                    "verse":"23",
+                    "text":"Indeed, this is his commandment: that we have faith in the name of his Son Jesus Christ and love one another, just as he gave us a commandment."
+                },
+                {
+                    "verse":"24",
+                    "text":"Moreover, the one who observes his commandments remains in union with him, and he in union with such one. And by the spirit that he gave us, we know that he remains in union with us."
+                }
+            ]
+        },
+        {
+            "chapter":"4",
+            "verses":[
+                {
+                    "verse":"1",
+                    "text":"Beloved ones, do not believe every inspired statement, but test the inspired statements to see whether they originate with God, for many false prophets have gone out into the world."
+                },
+                {
+                    "verse":"2",
+                    "text":"This is how you know that the inspired statement is from God: Every inspired statement that acknowledges Jesus Christ as having come in the flesh originates with God."
+                },
+                {
+                    "verse":"3",
+                    "text":"But every inspired statement that does not acknowledge Jesus does not originate with God. Furthermore, this is the antichrist’s inspired statement that you have heard was coming, and now it is already in the world."
+                },
+                {
+                    "verse":"4",
+                    "text":"You originate with God, little children, and you have conquered them, because the one who is in union with you is greater than the one who is in union with the world."
+                },
+                {
+                    "verse":"5",
+                    "text":"They originate with the world; that is why they speak what originates with the world and the world listens to them."
+                },
+                {
+                    "verse":"6",
+                    "text":"We originate with God. Whoever comes to know God listens to us; whoever does not originate with God does not listen to us. By this we distinguish the inspired statement of truth from the inspired statement of error."
+                },
+                {
+                    "verse":"7",
+                    "text":"Beloved ones, let us continue loving one another, because love is from God, and everyone who loves has been born from God and knows God."
+                },
+                {
+                    "verse":"8",
+                    "text":"Whoever does not love has not come to know God, because God is love."
+                },
+                {
+                    "verse":"9",
+                    "text":"By this the love of God was revealed in our case, that God sent his only-begotten Son into the world so that we might gain life through him."
+                },
+                {
+                    "verse":"10",
+                    "text":"The love is in this respect, not that we have loved God, but that he loved us and sent his Son as a propitiatory sacrifice for our sins."
+                },
+                {
+                    "verse":"11",
+                    "text":"Beloved ones, if this is how God loved us, then we are also under obligation to love one another."
+                },
+                {
+                    "verse":"12",
+                    "text":"No one has seen God at any time. If we continue loving one another, God remains in us and his love is made perfect in us."
+                },
+                {
+                    "verse":"13",
+                    "text":"By this we know that we are remaining in union with him and he in union with us, because he has given his spirit to us."
+                },
+                {
+                    "verse":"14",
+                    "text":"In addition, we ourselves have seen and are bearing witness that the Father has sent his Son as savior of the world."
+                },
+                {
+                    "verse":"15",
+                    "text":"Whoever acknowledges that Jesus is God’s Son, God remains in union with such one and he in union with God."
+                },
+                {
+                    "verse":"16",
+                    "text":"And we have come to know and believe the love that God has for us.\nGod is love, and the one who remains in love remains in union with God and God remains in union with him."
+                },
+                {
+                    "verse":"17",
+                    "text":"In this way love has been made perfect in us, so that we may have freeness of speech in the day of judgment, because just as that one is, so are we ourselves in this world."
+                },
+                {
+                    "verse":"18",
+                    "text":"There is no fear in love, but perfect love casts fear out, because fear restrains us. Indeed, the one who is fearful has not been made perfect in love."
+                },
+                {
+                    "verse":"19",
+                    "text":"We love, because he first loved us."
+                },
+                {
+                    "verse":"20",
+                    "text":"If anyone says, “I love God,“ and yet is hating his brother, he is a liar. For the one who does not love his brother, whom he has seen, cannot love God, whom he has not seen."
+                },
+                {
+                    "verse":"21",
+                    "text":"And we have this commandment from him, that whoever loves God must also love his brother."
+                }
+            ]
+        },
+        {
+            "chapter":"5",
+            "verses":[
+                {
+                    "verse":"1",
+                    "text":"Everyone who believes that Jesus is the Christ has been born from God, and everyone who loves the one who caused to be born loves him who has been born from that one."
+                },
+                {
+                    "verse":"2",
+                    "text":"By this we know that we love the children of God, when we love God and carry out his commandments."
+                },
+                {
+                    "verse":"3",
+                    "text":"For this is what the love of God means, that we observe his commandments; and yet his commandments are not burdensome,"
+                },
+                {
+                    "verse":"4",
+                    "text":"because everyone who has been born from God conquers the world. And this is the conquest that has conquered the world, our faith."
+                },
+                {
+                    "verse":"5",
+                    "text":"Who can conquer the world? Is it not the one who has faith that Jesus is the Son of God?"
+                },
+                {
+                    "verse":"6",
+                    "text":"This is the one who came by means of water and blood, Jesus Christ, not with the water only, but with the water and with the blood. And the spirit is bearing witness, because the spirit is the truth."
+                },
+                {
+                    "verse":"7",
+                    "text":"For there are three witness bearers:"
+                },
+                {
+                    "verse":"8",
+                    "text":"the spirit and the water and the blood; and the three are in agreement."
+                },
+                {
+                    "verse":"9",
+                    "text":"If we accept the witness of men, the witness of God is greater. Because this is the witness God gives, the witness that he has given about his Son."
+                },
+                {
+                    "verse":"10",
+                    "text":"The person putting his faith in the Son of God has the witness within himself. The person not having faith in God has made him a liar, because he has not put his faith in the witness given by God concerning his Son."
+                },
+                {
+                    "verse":"11",
+                    "text":"And this is the witness, that God gave us everlasting life, and this life is in his Son."
+                },
+                {
+                    "verse":"12",
+                    "text":"The one who has the Son has this life; the one who does not have the Son of God does not have this life."
+                },
+                {
+                    "verse":"13",
+                    "text":"I write you these things so that you may know that you have life everlasting, you who put your faith in the name of the Son of God."
+                },
+                {
+                    "verse":"14",
+                    "text":"And this is the confidence that we have toward him, that no matter what we ask according to his will, he hears us."
+                },
+                {
+                    "verse":"15",
+                    "text":"And if we know that he hears us concerning whatever we are asking, we know that we are to have the things we ask for, since we have asked them of him."
+                },
+                {
+                    "verse":"16",
+                    "text":"If anyone catches sight of his brother committing a sin that does not incur death, he will ask, and God will give life to him, yes, to those not committing sin that incurs death. There is a sin that does incur death. It is concerning that sin that I do not tell him to make request."
+                },
+                {
+                    "verse":"17",
+                    "text":"All unrighteousness is sin, and yet there is a sin that does not incur death."
+                },
+                {
+                    "verse":"18",
+                    "text":"We know that everyone who has been born from God does not practice sin, but the one born from God watches him, and the wicked one cannot take hold of him."
+                },
+                {
+                    "verse":"19",
+                    "text":"We know that we originate with God, but the whole world is lying in the power of the wicked one."
+                },
+                {
+                    "verse":"20",
+                    "text":"But we know that the Son of God has come, and he has given us insight so that we may gain the knowledge of the one who is true. And we are in union with the one who is true, by means of his Son Jesus Christ. This is the true God and life everlasting."
+                },
+                {
+                    "verse":"21",
+                    "text":"Little children, guard yourselves from idols."
+                }
+            ]
+        }
+    ]
+}
