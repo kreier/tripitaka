@@ -1,6 +1,7 @@
 # Examine a given text in JSON format
 
-import os, sys, json, nltk
+import os, sys, json, csv, nltk
+import pandas as pd
 
 # Check execution location, exit if not in /python
 if os.getcwd()[-6:] != "python":
@@ -12,6 +13,7 @@ output = ""
 number_pages = 1
 current_line = 0
 current_column = 0
+data = [['book', 'chapters', 'verses', 'sentences', 'words', 'letters', 'pages']]
 
 def import_booklist(sourcefolder):
     global booklist
@@ -74,7 +76,7 @@ def add_pagebreak():
         print(f"Number pages: {number_pages}")
 
 def parse_list():
-    global booklist, number_pages, output, current_column
+    global booklist, number_pages, output, current_column, df
     number_books      = 0
     number_chapters   = 0
     number_verses     = 0
@@ -109,7 +111,12 @@ def parse_list():
                             number_letters += len(word)
                             # print(word, end="_")
         # print some information about each book
-        print(f"Book: {book_name} with {number_chapters - n_c} chapters and {number_verses - n_v} verses. Sentences: {number_sentences - n_s}, Words: {number_words - n_w}, Letters: {number_letters - n_l}. Pages: {number_pages - n_p}")
+        # print(f"Book: {book_name} with {number_chapters - n_c} chapters and {number_verses - n_v} verses. Sentences: {number_sentences - n_s}, Words: {number_words - n_w}, Letters: {number_letters - n_l}. Pages: {number_pages - n_p}")
+        # add this information to the dataframe to late be exported as output.csv
+        # df.loc[len(df)] = [book_name, number_chapters - n_c, number_verses - n_v, number_sentences - n_s, number_words - n_w, number_letters - n_l, number_pages - n_p]
+        data.append([book_name, number_chapters - n_c, number_verses - n_v, number_sentences - n_s, number_words - n_w, number_letters - n_l, number_pages - n_p])
+        # df = df.append({'book': book_name, 'chapters': number_chapters - n_c, 'verses': number_verses - n_v, 'sentences': number_sentences - n_s, 'words': number_words - n_w, 'letters': number_letters - n_l, 'pages': number_pages - n_p}, ignore_index=True)
+        # update the counters
         n_c, n_v, n_s, n_w, n_l, n_p = number_chapters, number_verses, number_sentences, number_words, number_letters, number_pages
         f.close()
         output += "\n\n\n"
@@ -130,5 +137,14 @@ if __name__ == "__main__":
     import_booklist(sourcefolder)
     if len(booklist) > 0:
         parse_list()
-    with open("output.txt", "w") as text_file:
-        text_file.write(output)
+        with open("output.txt", "w", newline="") as text_file:
+            text_file.write(output)
+        # with open("output.csv", "w") as csv_file:
+        #     df.to_csv(csv_file, index=False)    # export the dataframe to a csv file
+        # with open("output.csv", "w") as csv_file:
+        #     writer = csv.writer(csv_file)
+        #     writer.writerows(data)
+        with open("output.csv", "w") as csv_file:
+            df = pd.DataFrame(data[1:], columns=data[0])
+            df.to_csv(csv_file, index=False)
+        print(data)
