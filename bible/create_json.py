@@ -64,6 +64,10 @@ for folder, files in result.items():
             if "\u201D" in verse_text:               # Replace right double quotation mark with left double quotation mark - JSON error, \u201C is allowed somehow
                 verse_text = verse_text.replace("\u201D", '“')
                 # print(f"Replaced \u201D in {book} {chapter_json['chapter']}:{verse_number}")
+            if "\u05D5" in verse_text:                          # Replace Hebrew Vav in Psalms 111:3
+                verse_text = verse_text.replace("\u05D5", '')
+            if "\u05D0" in verse_text:                          # Replace Hebrew Aleph in Psalms 111:1
+                verse_text = verse_text.replace("\u05D0", '')
             
             # Initialize the verse JSON structure
             verse_json = {}
