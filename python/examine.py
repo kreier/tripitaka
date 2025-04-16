@@ -147,4 +147,4 @@ if __name__ == "__main__":
         with open("output.csv", "w") as csv_file:
             df = pd.DataFrame(data[1:], columns=data[0])
             df.to_csv(csv_file, index=False)
-        print(data)
+        # print(data)
