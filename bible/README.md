@@ -2,6 +2,13 @@
 
 This folder started in 2024 with a copy of the King James Version as JSON file. It was intended as a proof of concept to rapidly generate data about the size of the 66 books, how many words are in there - to use this algorithm to compare it with the tripitaka.
 
+| translation     | chapters | verses | sentences |  words  |  letters  | pages |
+|-----------------|----------|--------|-----------|---------|-----------|-------|
+| kjv en          |    1,189 | 31,102 |    35,049 | 790,573 | 3,223,201 | 1,061 |
+| nwt en          |    1,189 | 31,077 |    42,029 | 789,104 | 3,380,746 | 1,095 |
+| nwt de          |          |        |           |         |           |       |
+| nwt vi          |          |        |           |         |           |       |
+
 ## King James Version
 
 We counted more than 3 million characters for the 790,573 words, used in 31,102 verses that are grouped in 1189 chapters. 66 books. In detail:

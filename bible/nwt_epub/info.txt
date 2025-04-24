@@ -1,0 +1,13 @@
+epub format is a renamed .zip file with structured content
+
+.epub         is   one epub  file  with 14,671,872 bytes
+/OEBPS        has 3943 xhtml files with 19,929,037 bytes
+/OEBPS/images has   72 image files with  9,020,652 bytes
+
+/nwt_xml      has 1192 xml   files with  7,028,720 bytes
+
+/json         has   69 json  files with  7,951,130 bytes
+nwt.txt       is   one txt   file  with  4,404,909 bytes
+
+nwt.zip       is   one zip   file  with  1,444,686 bytes
+nwt.7z        is   one 7zip  file  with  1,063,420 bytes
