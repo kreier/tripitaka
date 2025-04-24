@@ -49,6 +49,11 @@ Combined thats 31.4 MByte and roughly 7x larger than the KJV project, for compar
 
 And a little private remark: I always wanted to be able to say that I read the entire bible. How long would that take? Some [92 hours](https://github.com/kreier/kinhthanh/blob/main/data/size_audio_en.csv) on average reading speed in English. By 2020 I only had the audio files for [827 of the 1189 chapters](https://github.com/kreier/kinhthanh/blob/main/data/size_audio_en_2020.csv) (60 hours). In 2023 I had all files ready, and started listening on June 6th and was [finished 143 days later on October 6th, 2023](https://github.com/kreier/study/blob/main/markdown/progress.txt). Now let's follow up with German and Vietnamese.
 
+More details on further subpages:
+
+- [Bible](./bible)
+- [Tripitaka](./tripitaka)
+
 ## Tripitaka size in tablets at the Kuthodaw Pagoda
 
 ![Size based on pages in the Kuthodaw Pagoda](size_kuthodaw.png)
