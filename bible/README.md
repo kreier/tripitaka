@@ -14,7 +14,7 @@ This folder started in 2024 with a copy of the King James Version as JSON file. 
 We counted more than 3 million characters for the 790,573 words, used in 31,102 verses that are grouped in 1189 chapters. 66 books. In detail:
 
 | book            | chapters | verses | sentences | words  | letters | pages |
-|-----------------|----------|--------|-----------|--------|---------|-------|
+|-----------------|---------:|-------:|----------:|-------:|--------:|------:|
 | Genesis         |       50 |  1,533 |     1,716 | 38,290 | 151,857 |    50 |
 | Exodus          |       40 |  1,213 |     1,288 | 32,695 | 131,775 |    43 |
 | Leviticus       |       27 |    859 |       872 | 24,546 |  98,922 |    33 |
@@ -90,7 +90,7 @@ The source for the text is the XML file, embedded in the DAISY files for screenr
 It is slightly larger than the kjv, but this could also be because of included quotation marks and other small details. It has the same 1189 chapters, but only 31077 verses (12 in Mark and 12 in John missing), 42032 sentences, 789,071 words and 3,380,746 letters. It would fit on 1095 pages, 34 more than kjv.
 
 | book            | chapters | verses | sentences | words   | letters   | pages |
-|-----------------|----------|--------|-----------|---------|-----------|-------|
+|-----------------|---------:|-------:|----------:|--------:|----------:|------:|
 | Genesis         | 50       | 1,533  | 2,116     | 38,766  | 163,742   | 54    |
 | Exodus          | 40       | 1,213  | 1,610     | 31,831  | 133,989   | 43    |
 | Leviticus       | 27       | 859    | 1,164     | 23,797  | 100,203   | 33    |
