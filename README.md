@@ -4,7 +4,7 @@
 [![MIT license](https://img.shields.io/github/license/kreier/tripitaka)](https://kreier.mit-license.org/)
 [![pages-build-deployment](https://github.com/kreier/tripitaka/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/kreier/tripitaka/actions/workflows/pages/pages-build-deployment)
 
-I want to get some statistics on the text of the Tripitaka and probably make it searchable for phrases. And compare the results to the Bible. Here the short result: The three baskets have 2782 books and 5273 chapters that could be printed on 7013 pages. The Bible has 66 books with 1189 chapters that in the kjv could be printed on 1062 pages. The Tripitaka is therefore roughly 6.6x as large. There are a few more pages with details:
+I want to get some **statistics on the text of the Tripitaka** and probably make it searchable for phrases. And compare the results to the Bible. Here the short result: The three baskets have 2782 books and 5273 chapters that could be printed on **7013 pages**. The Bible has 66 books with 1189 chapters that in the kjv could be printed on **1062 pages**. The Tripitaka is therefore roughly 6.6x as large. There are a few more pages with details:
 
 - [Tripitaka](tripitaka)
   - [German - de](tripitaka/de)
@@ -12,6 +12,10 @@ I want to get some statistics on the text of the Tripitaka and probably make it 
   - [Pali - pli](tripitaka/pli)
 - [Bible](bible)
   - [King James Version - kjv](bible/kjv)
+- [Josephus](josephus)
+  - [Against Apion](josephus/against_apion)
+  - [The Jewish War](josephus/the_jewish_war)
+  - [Antiquities of the Jews](josephus/antiquities_of_the_jews)
 
 ## The Pali version by the [The Vipassana Research Institute (VRI)](https://www.vridhamma.org/Tipitaka-Project)
 
